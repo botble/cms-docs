@@ -4,6 +4,7 @@
 - [Activate plugin](#activate-plugin)
 - [Deactivate plugin](#deactivate-plugin)
 - [Remove plugin](#remove-plugin)
+- [plugin structure](#plugin-structure)
 
 > {info}From version 2.1, command name is changed from `cms:create` to `plugin:create`. Please run `php artisan --help` to see all commands
 
@@ -50,3 +51,9 @@ When you run this command. It will do:
 + Delete folder demo in `/plugins` and delete `/plugins` directory if it's empty
 
 > {info} See video for more detail: [Delete a plugin](https://www.youtube.com/watch?v=jmex2G4eC18)
+
+
+<a name="plugin-structure"></a>
+## Plugin Structure
+**- Plugin Structure **
+

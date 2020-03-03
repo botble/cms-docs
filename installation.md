@@ -105,7 +105,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (https://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/cms/4.1/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/cms/master/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 

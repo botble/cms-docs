@@ -30,6 +30,8 @@ If you put the view file in /platform/themes/your-theme/partials/contact-form.bl
 [contact-form view="theme.your-theme::partials.contact-form"][/contact-form]
 ```
 
+Not: `your-theme` is your theme's name, if you're using theme `ripple` then it's `theme.ripple::partials.contact-form`
+
 Then copy base form content in platform/plugins/contact/resources/views/forms/contact.blade.php to your custom view and change it if you need.
 
 ```php

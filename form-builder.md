@@ -154,7 +154,7 @@ $this
     ]);
 ```
 
-If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md-4` and add 1 more field inside `rowOpen` and `rowClose1`.
+If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md-4` and add 1 more field inside `rowOpen1` and `rowClose1`.
 
 ## Add more columns into existed form
 

@@ -1,4 +1,6 @@
-#  Google Analytics
+#  Analytics
+
+Integrate with Google Analytics
 
 ### Getting credentials
 

@@ -7,9 +7,6 @@
 - Getting Started
     - [Installation](installation.md)
     - [Virtual host](virtualhost.md)
-- Packages
-    - [List packages](packages.md)
-    - [Google Analytics](analytics.md)
 - Plugin development
     - [Getting started](plugin.md)
     - [Plugin structure](plugin-structure.md)
@@ -42,9 +39,9 @@
     - [FAQ](faq.md)
     
 - Plugins
+    - [Analytics](analytics.md)
     - [Custom fields](plugin-custom-field.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
     - [Language](plugin-language.md)
-    - [Simple sliders](plugin-simple-slider.md)
     

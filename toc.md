@@ -42,8 +42,9 @@
     - [FAQ](faq.md)
     
 - Plugins
+    - [Custom fields](plugin-custom-field.md)
+    - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
     - [Language](plugin-language.md)
-    - [Custom fields](plugin-custom-field.md)
     - [Simple sliders](plugin-simple-slider.md)
     

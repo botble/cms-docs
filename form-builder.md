@@ -7,7 +7,7 @@ Example:
 
 ```php
 $this
-    ->setModuleName({PLUGIN}_MODULE_SCREEN_NAME)
+    ->setUpModel(new {Plugin})
     ->setValidatorClass({Plugin}Request::class)
     ->withCustomFields()
     ->add('field_name', 'text', [
@@ -128,6 +128,34 @@ By default, a form will have 2 columns. It's separated by a breaking point. You 
 ->setBreakFieldPoint('field_name');
 ```
 
+## Row with multiple fields
+
+```php
+$this
+    ->add('rowOpen1', 'html', [
+        'html' => '<div class="row">',
+    ])
+    ->add('field1', 'text', [
+        'label'      => 'Field 1',
+        'label_attr' => ['class' => 'control-label'],
+        'wrapper'    => [
+            'class' => 'form-group col-md-6',
+        ],
+    ])
+    ->add('field2', 'text', [
+        'label'      => 'Field 2',
+        'label_attr' => ['class' => 'control-label'],
+        'wrapper'    => [
+            'class' => 'form-group col-md-6',
+        ],
+    ])
+    ->add('rowClose1', 'html', [
+        'html' => '</div>',
+    ]);
+```
+
+If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md-4` and add 1 more field inside `rowOpen1` and `rowClose1`.
+
 ## Add more columns into existed form
 
 ```php
@@ -135,11 +163,11 @@ add_filter(BASE_FILTER_BEFORE_RENDER_FORM, 'add_addition_fields_into_form', 120,
 
 /**
  * @param \Botble\Base\Forms\FormAbstract $form
- * @param string $screen
+ * @param $data
  */
-function add_addition_fields_into_form($form, $screen, $model)
+function add_addition_fields_into_form($form, $data)
 {
-    if ($screen == POST_MODULE_SCREEN_NAME) {
+    if (get_class($data) == \Botble\Blog\Models\Post::class) {
         $form
             ->add('test', 'text', [
                 'label'      => __('Test Field'),

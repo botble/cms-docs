@@ -6,50 +6,8 @@
 
 Make sure you have done following steps:
 
-- Run `php artisan storage:link`
 - Make sure `APP_URL` in `.env` is correct.
 - Go to Admin -> Settings -> Media and set Driver to `Public`.
-
-### Using on hosting
-
-If you can't run php artisan storage:link. You have to open file `config/filesystem.php`
-
-Then change
-
-```php
-'public' => [
-    'driver' => 'local',
-    'root' => storage_path('app/public'),
-    'url' => env('APP_URL').'/storage',
-    'visibility' => 'public',
-],
-```
-
-to
-
-```php
-'public' => [
-    'driver' => 'local',
-    'root' => public_path('storage'),
-    'url' => env('APP_URL').'/storage',
-    'visibility' => 'public',
-],
-```
-
-Or add to `/platform/themes/your-theme/functions/functions.php`
-
-```php
-add_action('init', 'change_media_config', 124);
-
-if (!function_exists('change_media_config')) {
-    function change_media_config() {
-        config([
-            'filesystems.default'           => 'public',
-            'filesystems.disks.public.root' => public_path('storage'),
-        ]);
-    }
-}
-```
 
 ## Change media image sizes
 

@@ -33,7 +33,7 @@
 
 <a name="version_5_2"></a>
 ## Botble 5.2
-### 08-02-2020
+### 12-03-2020
 - Upgrade to Laravel 7.x
 - Improve source code.
 - Add package `js-validation` & `sitemap`

@@ -9,7 +9,7 @@
 **We recommend to use MAMP PRO (https://www.mamp.info/en/) instead of Xampp to create develop environment. With MAMP, you can easy to add/manage virtual domain like cms.local.**
 
 - Apache, nginx, or another compatible web server.
-- PHP >= 7.2 >> Higher
+- PHP >= 7.2.5 >> Higher
 - MySQL Database server
 - PDO PHP Extension
 - OpenSSL PHP Extension
@@ -23,7 +23,7 @@
 - Module Re_write server
 - PHP_CURL Module Enable
 
->  {warning} On this project, I use the latest Laravel version (currently 6.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 7.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Install on hosting
@@ -35,34 +35,6 @@
 - Upload all files into `public_html`.
 - Create a database and import data from `database.sql` (it's located in source code).
 - Create `.env` from `.env.example` and update your database information
-- Config for media:
-    + If your hosting support SSH, you just need to cd to `public_html` and run command `php artisan storage:link`
-    + If your hosting doesn't support SSH. You have to open file `config/filesystem.php`
-                                           
-       Then change
-       
-       ```php
-       'public' => [
-           'driver' => 'local',
-           'root' => storage_path('app/public'),
-           'url' => env('APP_URL').'/storage',
-           'visibility' => 'public',
-       ],
-       ```
-       
-       to
-       
-       ```php
-       'public' => [
-           'driver' => 'local',
-           'root' => public_path('storage'),
-           'url' => env('APP_URL').'/storage',
-           'visibility' => 'public',
-       ],
-       ```
-      
-       Copy all files from `/storage/app/public` to `public/storage`.
-
 
 ## Install locally or in VPS
 
@@ -80,17 +52,12 @@
 
 * Run `php artisan cms:theme:assets:publish`
 
-* Run `php artisan storage:link`
-
-Note: If you can't run `php artisan storage:link` (some hosting doesn't support it), you can change config
-in `/config/filesystems.php` like this https://prnt.sc/pn50dc then move all uploaded file from `/storage/app/public` to `/public/storage`.
-
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 
 
 **If you need sample data, you can import it from `database.sql`**
 
-**Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/3.5/virtualhost).** 
+**Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/master/virtualhost).** 
 
 <a name="note"></a>
 ## Note

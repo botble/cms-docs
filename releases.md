@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.2](#version_5_2)
 - [Botble 5.1](#version_5_1)
 - [Botble 5.0](#version_5_0)
 - [Botble 4.2](#version_4_2)
@@ -29,6 +30,19 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_2"></a>
+## Botble 5.2
+### 08-02-2020
+- Upgrade to Laravel 7.x
+- Improve source code.
+- Add package `js-validation` & `sitemap`
+- Fix context menu in media.
+- Fix bug when changing admin's password.
+- Improve plugin custom fields.
+- Update translations.
+- Update UI.
+- Refactor code.
 
 <a name="version_5_1"></a>
 ## Botble 5.1

@@ -30,15 +30,11 @@
 
 > {note} It's better if you install it locally and make it ready for your website before deploying on your hosting.
 
-- Run `composer install` to install vendor packages (If you're not a Laravel developer and you can't run that command, please contact me https://codecanyon.net/user/botble then I will send you that folder).
-
 - Upload all files into `public_html`.
 - Create a database and import data from `database.sql` (it's located in source code).
 - Create `.env` from `.env.example` and update your database information
 
 ## Install locally or in VPS
-
-* Run `composer install` to download vendor packages
 
 * Create `.env` file from `.env-example` and update your configuration
 
@@ -54,6 +50,7 @@
 
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 
+> {note} If you're a Laravel developer or you want to customize our source code, please delete folder `vendor` then run `composer install` to re-install vendor packages before starting change our CMS.
 
 **If you need sample data, you can import it from `database.sql`**
 

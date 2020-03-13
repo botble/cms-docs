@@ -39,7 +39,7 @@
     - [FAQ](faq.md)
     
 - Plugins
-    - [Analytics](analytics.md)
+    - [Analytics](plugin-analytics.md)
     - [Custom fields](plugin-custom-field.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)

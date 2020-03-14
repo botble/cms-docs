@@ -19,6 +19,7 @@
     - [MVC Pattern](theme-mvc-pattern.md)
     - [Theme options](theme-options.md)
     - [Layouts](theme-layout.md)
+    - [Error pages](theme-error-pages.md)
     
 - Core
     - [API](api.md)

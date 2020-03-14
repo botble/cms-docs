@@ -5,8 +5,8 @@
 <a name="customize-404-page"></a>
 ## Customize 404 page
 
-Default 404 page for theme is located in `/platform/themes/lara-mag/views/404.blade.php`.
-To customize error layout, you need to change in `/platform/themes/lara-mag/views/error-master.blade.php`
+Default 404 page for theme is located in `/platform/themes/your-theme/views/404.blade.php`.
+To customize error layout, you need to change in `/platform/themes/your-theme/views/error-master.blade.php`
 
 > {note} Please use below code if you want to use theme layout for error pages.
 
@@ -41,7 +41,7 @@ To customize error layout, you need to change in `/platform/themes/lara-mag/view
 </html>
 ```
 
-Example for `/platform/themes/lara-mag/views/404.blade.php`:
+Example for `/platform/themes/your-theme/views/404.blade.php`:
 
 ```html
 @extends('theme.' . setting('theme') . '::views.error-master')

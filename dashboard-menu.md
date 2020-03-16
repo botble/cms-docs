@@ -7,7 +7,7 @@
 ```php
 \Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
     dashboard_menu()->registerItem([
-        'id'          => 'cms-plugins-<your-plugin>', // key of menu, it should unique
+        'id'          => 'cms-plugins-<your-plugin>', // key of menu, it's must unique
         'priority'    => 1,
         'parent_id'   => null,
         'name'        => 'Your plugin name', // It should be a translation key. Ex: plugins/test::test.name
@@ -36,6 +36,15 @@ Ex: If you want to remove menu "Media"
 \Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
     dashboard_menu()
         ->removeItem('cms-core-media');
+});
+```
+
+Ex: Remove submenu, you need to provide parent ID
+
+```php
+\Event::listen(\Illuminate\Routing\Events\RouteMatched::class, function () {
+    dashboard_menu()
+        ->removeItem('cms-core-system-information', 'cms-core-platform-administration');
 });
 ```
 

@@ -11,15 +11,15 @@
 - Apache, nginx, or another compatible web server.
 - PHP >= 7.2.5 >> Higher
 - MySQL Database server
-- PDO PHP Extension
-- OpenSSL PHP Extension
-- Mbstring PHP Extension
-- Exif PHP Extension
-- Fileinfo Extension
-- XML PHP Extension
+- BCMath PHP Extension
 - Ctype PHP Extension
+- Fileinfo PHP extension
 - JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PDO PHP Extension
 - Tokenizer PHP Extension
+- XML PHP Extension
 - Module Re_write server
 - PHP_CURL Module Enable
 

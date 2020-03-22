@@ -11,16 +11,16 @@ Theme::breadcrumb()->add('label', 'http://...')->add('label2', 'http:...');
     
 // or
 
-Theme::breadcrumb()->add(array(
-    array(
+Theme::breadcrumb()->add([
+    [
         'label' => 'label1',
         'url'   => 'http://...'
-    ),
-    array(
+    ],
+    [
         'label' => 'label2',
         'url'   => 'http://...'
-    )
-));
+    ]
+]);
 ```
     
 To render breadcrumbs.
@@ -29,7 +29,7 @@ To render breadcrumbs.
 {!! Theme::breadcrumb()->render() !!}
 ```
     
-To customize breadcrumb, using this code:
+To customize breadcrumb, using below code instead of `{!! Theme::breadcrumb()->render() !!}`:
 
 ```php
 <ul class="breadcrumb">
@@ -42,4 +42,9 @@ To customize breadcrumb, using this code:
     @endforeach
 </ul>
 ```
-   
+
+If you're using breadcrumbs in many files, you can put above code in `platform/themes/your-theme/partials/breadcrumbs.blade.php` then use
+
+```php
+{!! Theme::partial('breadcrumbs') !!}
+```

@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.3](#version_5_3)
 - [Botble 5.2](#version_5_2)
 - [Botble 5.1](#version_5_1)
 - [Botble 5.0](#version_5_0)
@@ -30,6 +31,17 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_3"></a>
+## Botble 5.3
+### 29-03-2020
+- Update to the latest Laravel version 7.3
+- Improve source code.
+- Add plugin Translation.
+- Improve plugin custom fields.
+- Improve plugin language. When add/remove a language, it also adds/removes language files in /resources/lang.
+- Update UI.
+- Refactor code.
 
 <a name="version_5_2"></a>
 ## Botble 5.2

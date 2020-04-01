@@ -20,6 +20,7 @@
     - [Theme options](theme-options.md)
     - [Layouts](theme-layout.md)
     - [Error pages](theme-error-pages.md)
+    - [Theme localization](theme-localization.md)
     
 - Core
     - [API](api.md)

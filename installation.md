@@ -47,10 +47,8 @@
     - Run `php artisan cms:user:create` to create admin user.
     
     - Run `php artisan cms:theme:activate ripple`
-    
-    - Run `php artisan cms:theme:assets:publish`
 
-- If you pull source code from GIT server:
+- If you're pulled source code from GIT server:
     - Run `php artisan vendor:publish --tag=cms-public --force`
     - Run `php artisan cms:theme:assets:publish`
 

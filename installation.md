@@ -44,7 +44,7 @@
 - Don't use sample data:
     - Run `composer install` to install vendor packages.
     
-    - Run `php artisan migrate` to create database structure with no sample data or import default database from `database.sql` if you need sample data.
+    - Run `php artisan migrate` to create database structure.
 
     - Run `php artisan cms:user:create` to create admin user.
     
@@ -55,9 +55,10 @@
     - Run `php artisan cms:theme:assets:publish`
 
 - Run web locally:
-    - Run `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS.
+    - Run `php artisan serve`. Open `http://localhost:8000`, you should see the homepage.
     - Go to `/admin` to access to admin panel.
     - If you're using sample data, the default admin account is `botble` - `159357`.
+    - If you don't use sample data, you need to go to Admin -> Plugins then activate all plugins.
     
 
 > {note} If you're a Laravel developer or you want to customize our source code in folder `platform/core` & `platform/packages`, 

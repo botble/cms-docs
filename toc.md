@@ -6,7 +6,6 @@
     - [Upgrade Guide](upgrade.md)
 - Getting Started
     - [Installation](installation.md)
-    - [Virtual host](virtualhost.md)
 - Plugin development
     - [Getting started](plugin.md)
     - [Plugin structure](plugin-structure.md)

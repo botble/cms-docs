@@ -32,30 +32,38 @@
 
 - Upload all files into `public_html`.
 - Create a database and import data from `database.sql` (it's located in source code).
-- Create `.env` from `.env.example` and update your database information
+- Create `.env` from `.env.example` and update your database credentials.
 
 ## Install locally or in VPS
 
-* Create `.env` file from `.env-example` and update your configuration
+- Create `.env` file from `.env-example` and update your configuration.
 
-* Run `php artisan migrate` to create database structure with no sample data or import default database from `database.sql` if you need sample data.
+- Using sample data: 
+    - Import database from `database.sql`.
+    
+- Don't use sample data:
+    - Run `php artisan migrate` to create database structure with no sample data or import default database from `database.sql` if you need sample data.
 
-* Run `php artisan cms:user:create` to create admin user
+    - Run `php artisan cms:user:create` to create admin user.
+    
+    - Run `php artisan cms:theme:activate ripple`
+    
+    - Run `php artisan cms:theme:assets:publish`
 
-* Run `php artisan vendor:publish --tag=cms-public --force`
+- If you pull source code from GIT server:
+    - Run `php artisan vendor:publish --tag=cms-public --force`
+    - Run `php artisan cms:theme:assets:publish`
 
-* Run `php artisan cms:theme:activate ripple`
-
-* Run `php artisan cms:theme:assets:publish`
-
-* Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
+- Run web locally:
+    - Run `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS.
+    - Go to `/admin` to access to admin panel.
+    - If you're using sample data, the default admin account is `botble` - `159357`.
+    
 
 > {note} If you're a Laravel developer or you want to customize our source code in folder `platform/core` & `platform/packages`, 
 > please delete folder `vendor` then run `composer install` to re-install vendor packages before starting change our source code.
 
-**If you need sample data, you can import it from `database.sql`**
-
-**Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/master/virtualhost).** 
+**Botble CMS should be run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/master/virtualhost).** 
 
 <a name="note"></a>
 ## Note

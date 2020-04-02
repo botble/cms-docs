@@ -36,14 +36,14 @@
 
 ## Install locally or in VPS
 
+- Delete folder `/vendor/botble` then run `composer install` to install vendor packages.
+
 - Create `.env` file from `.env-example` and update your configuration.
 
 - Using sample data: 
     - Import database from `database.sql`.
     
 - Don't use sample data:
-    - Run `composer install` to install vendor packages.
-    
     - Run `php artisan migrate` to create database structure.
 
     - Run `php artisan cms:user:create` to create admin user.

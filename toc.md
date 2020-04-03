@@ -36,6 +36,7 @@
     - [SEO helper](seo-helper.md)
     - [Slug field](slug-field.md)
     - [Localization](localization.md)
+    - [Sitemap](sitemap.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
     

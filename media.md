@@ -95,7 +95,7 @@ $image = \RvMedia::handleUpload($fileUpload, $folder->id);
 ## Increase upload file size
 - Maximum file size is 2MB by default.
 
-- To increase file upload size in PHP, you need to modify the upload_max_filesize and post_max_size variable’s in your php.ini file.
+- To increase file upload size in PHP, you need to modify the `upload_max_filesize` and `post_max_size` variable’s in your php.ini file.
 If you can't change it, please contact your hosing provider to increase those values.
 
 ```

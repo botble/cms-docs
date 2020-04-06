@@ -91,3 +91,14 @@ $folder = \Botble\Media\Models\MediaFolder::create([
 $fileUpload = new \Illuminate\Http\UploadedFile(database_path('files/example.png'), 'example.png', 'image/png', null, true);
 $image = \RvMedia::handleUpload($fileUpload, $folder->id);
 ```
+
+## Increase upload file size
+- Maximum file size is 2MB by default.
+
+- To increase file upload size in PHP, you need to modify the upload_max_filesize and post_max_size variable’s in your php.ini file.
+If you can't change it, please contact your hosing provider to increase those values.
+
+```
+upload_max_filesize = 10M
+post_max_size = 10M
+```

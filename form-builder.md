@@ -113,6 +113,22 @@ If you want to show form field as mandatory field, add `required` class to label
 ])
 ```
 
+### Number field with input mask
+
+```php
+
+Assets::addScripts(['input-mask']);
+
+->add('field_name', 'text', [
+    'label' => __('Field label'),
+    'label_attr' => ['class' => 'control-label'],
+    'attr'       => [
+        'id'    => 'field_name',
+        'class' => 'form-control input-mask-number',
+    ],
+])
+```
+
 ## Form layouts
 
 Default layout template for form is `core.base::forms.form`, you can set other layout for form.

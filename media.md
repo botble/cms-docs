@@ -43,11 +43,17 @@ Add many sizes:
     ...
 ```
 
+After that, you need to run command to regenerate thumbnails.
+
+```bash
+php artisan cms:media:thumbnail:generate
+```
+
 How to use:
 
 ```php
-    {{ get_image_url($post->image, 'post-small') }}
-    {{ get_object_image($post->image, 'post-small') }}
+{{ get_image_url($post->image, 'post-small') }}
+{{ get_object_image($post->image, 'post-small') }}
 ```
 
 ## Custom upload

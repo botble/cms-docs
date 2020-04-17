@@ -21,7 +21,7 @@ add_filter(BASE_FILTER_ENUM_LABEL, function ($value, $class) {
 
 add_filter(BASE_FILTER_ENUM_HTML, function ($value, $class) {
     if ($class == \Botble\Base\Enums\BaseStatusEnum::class && $value == 'disabled') {
-        $value = Html::tag('span', \Botble\Base\Enums\BaseStatusEnum::getLabel('disabled'), ['class' => 'label-danger status-label'])
+        $value = \Html::tag('span', \Botble\Base\Enums\BaseStatusEnum::getLabel($value), ['class' => 'label-danger status-label'])
             ->toHtml();
     }
 

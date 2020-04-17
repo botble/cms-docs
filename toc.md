@@ -34,6 +34,7 @@
     - [Dashboard Menu](dashboard-menu.md)
     - [Form builder](form-builder.md)
     - [SEO helper](seo-helper.md)
+    - [Enum](enum.md)
     - [Slug field](slug-field.md)
     - [Localization](localization.md)
     - [Sitemap](sitemap.md)

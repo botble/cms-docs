@@ -12,25 +12,23 @@
 <a name="command_generate"></a>
 ## Create theme with artisan CLI
 
-The first time you have to create theme "default" structure, using the artisan command:
+The first time you have to create theme "demo" structure, using the artisan command:
 
 ```bash
-php artisan cms:theme:create default
+php artisan cms:theme:create demo
 ```
 
 
 To delete an existing theme, use the command:
 
 ```bash
-php artisan cms:theme:remove default
+php artisan cms:theme:remove demo
 ```
 
 <a name="configuration"></a>
 ##Configuration
 
-After the config is published, you will see the config file in "config/theme", but all the configuration can be replaced by a config file inside a theme.
-
-> {info} Theme config location: /public/themes/[theme]/config.php
+> {info} The main config for theme is located in /platform/themes/[theme]/config.php
 
 The config is convenient for setting up basic CSS/JS, partial composer, breadcrumb template and also metas.
 
@@ -92,31 +90,12 @@ class HomeController extends Controller {
     {
         $theme = Theme::uses('default')->layout('mobile');
 
-        $view = array(
+        $view = [
             'name' => 'Botble'
-        );
+        ];
 
-        // home.index will look up the path 'resources/views/home/index.php'
-        return $theme->of('home.index', $view)->render();
-
-        // Specific status code with render.
-        return $theme->of('home.index', $view)->render(200);
-
-        // home.index will look up the path 'resources/views/mobile/home/index.php'
-        return $theme->ofWithLayout('home.index', $view)->render();
-
-        // home.index will look up the path 'public/themes/default/views/home/index.php'
+        // home.index will look up the path 'platform/themes/your-theme/views/home/index.blade.php'
         return $theme->scope('home.index', $view)->render();
-
-        // home.index will look up the path 'public/themes/default/views/mobile/home/index.php'
-        return $theme->scopeWithLayout('home.index', $view)->render();
-
-        // Looking for a custom path.
-        return $theme->load('app.somewhere.viewfile', $view)->render();
-
-        // Working with cookie.
-        $cookie = Cookie::make('name', 'Tee');
-        return $theme->of('home.index', $view)->withCookie($cookie)->render();
     }
 
 }
@@ -124,31 +103,16 @@ class HomeController extends Controller {
 
 > {info} Get only content "$theme->of('home.index')->content();".
 
-Finding from both theme's view and application's view.
-    
-```php
-$theme = Theme::uses('default')->layout('default');
-    
-return $theme->watch('home.index')->render();
-```
-
-To check whether a theme exists.
-
-```php
-// Returns boolean.
-Theme::exists('themename');
-```
-
 To find the location of a view.
 
 ```php
 $which = $theme->scope('home.index')->location();
     
-echo $which; // themer::views.home.index
+echo $which; // theme::views.home.index
 
 $which = $theme->scope('home.index')->location(true);
 
-echo $which; // ./public/themes/name/views/home/index.blade.php
+echo $which; // ./platform/themes/name/views/home/index.blade.php
 ```
 
 <a name="partials"></a>
@@ -157,18 +121,18 @@ echo $which; // ./public/themes/name/views/home/index.blade.php
 Render a partial in your layouts or views.
 
 ```php
-// This will look up to "public/themes/[theme]/partials/header.php"
-echo Theme::partial('header', array('title' => 'Header'));
+// This will look up to "platform/themes/[theme]/partials/header.php"
+echo Theme::partial('header', ['title' => 'Header']);
 
 // Partial with current layout specific.
-// This will look up up to "public/themes/[theme]/partials/[CURRENT_LAYOUT]/header.php"
-echo Theme::partialWithLayout('header', array('title' => 'Header'));
+// This will look up up to "platform/themes/[theme]/partials/[CURRENT_LAYOUT]/header.php"
+echo Theme::partialWithLayout('header', ['title' => 'Header']);
 ```
 
 Finding from both theme's partial and application's partials.
 
 ```php
-echo Theme::watchPartial('header', array('title' => 'Header'));
+echo Theme::watchPartial('header', ['title' => 'Header']);
 ```
 
 Partial composer.

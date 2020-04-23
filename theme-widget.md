@@ -33,7 +33,7 @@ register_sidebar([
 php artisan cms:widget:create <widget name>
 ```
     
-This widget will be created in `/public/themes/<current active theme>/widgets/<widget name>`.
+This widget will be created in `/platform/themes/<current active theme>/widgets/<widget name>`.
     
 Then go to `/admin/widgets`, you will see your widget.
 
@@ -52,6 +52,6 @@ This widget will be removed.
 
 A widget will have 3 files: This main class to init widget.
 
-* Main file is main class to init widget. Ex: `/public/themes/ripple/widgets/tags/tags.php`
-* A file to display frontend view. Ex: `/public/themes/ripple/widgets/tags/templates/frontend.php`
-* A file to display backend view. Ex: `/public/themes/ripple/widgets/tags/templates/backend.php`
+* Main file is main class to init widget. Ex: `/platform/themes/ripple/widgets/tags/tags.php`
+* A file to display frontend view. Ex: `/platform/themes/ripple/widgets/tags/templates/frontend.php`
+* A file to display backend view. Ex: `/platform/themes/ripple/widgets/tags/templates/backend.php`

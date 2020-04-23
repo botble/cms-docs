@@ -89,7 +89,7 @@ You can prepare on a global in package config.
 ```php
 // Location: config/theme/config.php
 ....
-'events' => array(
+'events' => [
 
     ....
 
@@ -104,7 +104,7 @@ You can prepare on a global in package config.
         });
     }
 
-)
+]
 ....
 ```
 

@@ -1,7 +1,7 @@
 # Layouts
 
 ### Create new layout
-Create a layout file in `/public/themes/<current theme>/layouts` following `default.blade.php` in this folder. Then customize it like you want.
+Create a layout file in `/platform/themes/<current theme>/layouts` following `default.blade.php` in this folder. Then customize it like you want.
 
 Example: `custom-layout.blade.php`
 ```php
@@ -11,7 +11,7 @@ Example: `custom-layout.blade.php`
 ```
 
 ### Using layout for pages
-*Step 1:* Register new template to `/public/themes/<current theme>/functions/functions.php`
+*Step 1:* Register new template to `/platform/themes/<current theme>/functions/functions.php`
 
 ```php
 register_page_template([

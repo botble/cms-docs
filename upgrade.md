@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.4](#upgrade-5.4)
 - [Upgrade To 5.3](#upgrade-5.3)
 - [Upgrade To 5.2](#upgrade-5.2)
 - [Upgrade To 5.1](#upgrade-5.1)
@@ -26,6 +27,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-5.4"></a>
+## Upgrade to 5.4
+
+- Override folder `app`, `config`, `platform`, `resources/lang` from the update source code.
+- Override file `composer.json` `and composer.lock` from the update source code.
+- Run `composer install` to install vendor packages
+- Run `php artisan migrate` to update database.
+- Remove folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.3"></a>
 ## Upgrade to 5.3

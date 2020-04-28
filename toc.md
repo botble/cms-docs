@@ -46,5 +46,6 @@
     - [Custom fields](plugin-custom-field.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
+    - [Backup](plugin-backup.md)
     - [Language](plugin-language.md)
     

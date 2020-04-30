@@ -5,9 +5,7 @@
 - Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
-if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-    \SeoHelper::registerModule([YourPluginModel::class]);
-}
+\SeoHelper::registerModule([YourPluginModel::class]);
 ```
 
 ## Title & description

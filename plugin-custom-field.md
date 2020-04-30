@@ -68,7 +68,7 @@ foreach(get_field($page, 'foo_repeater') as $item) {
 }
 ```
 
-#### Add support custom fields for your plugin. Add to function `boot()` of your plugin service provider.
+## Add support custom fields for your plugin. Add to function `boot()` of your plugin service provider.
 
 ```php
 $this->app->booted(function () {
@@ -95,7 +95,7 @@ $this->app->booted(function () {
             ->registerRule('basic', trans('plugins/block::block.name'), Block::class, function () {
                 return $this->app->make(BlockInterface::class)->pluck('blocks.name', 'blocks.id');
             })
-            ->expandRule('other', 'Model', 'model_name', function () {
+            ->expandRule('other', trans('plugins/custom-field::rules.model_name'), 'model_name', function () {
                 return [
                     Block::class => trans('plugins/block::block.name'),
                 ];

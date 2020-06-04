@@ -63,13 +63,13 @@ You can create your custom upload with `RvMedia` facade.
 Ex:
 
 ```
-\RvMedia::handleUpload(request()->input('file'), 0, 'your-folder');
+\RvMedia::handleUpload(request()->file('file'), 0, 'your-folder');
 ```
 
 Or
 
 ```
-rv_media_handle_upload(request()->input('file'), 0, 'your-folder');
+rv_media_handle_upload(request()->file('file'), 0, 'your-folder');
 ```
 
 ## Get image by size

@@ -31,3 +31,26 @@ public function getExample()
     return \Theme::layout('custom-layout')->scope('example', ['data' => 123])->render();
 }
 ```
+
+### Using $page in layouts
+
+You can send $page variable from /platform/themes/views/page.blade.php to /platform/themes/layouts/default.blade.php using:
+
+
+```php
+// Add on the top of platform/themes/views/page.blade.php
+
+@php
+Theme::set('page', $page);
+@endphp
+```
+
+```php
+// Add on the top of platform/themes/layouts/default.blade.php
+
+@php
+$page = Theme::get('page');
+@endphp
+```
+
+Then you can use $page variable in layout blade view to display data.

@@ -6,6 +6,7 @@
     - [Upgrade Guide](upgrade.md)
 - Getting Started
     - [Installation](installation.md)
+    - [License](license.md)
 - Plugin development
     - [Getting started](plugin.md)
     - [Plugin structure](plugin-structure.md)

@@ -1,6 +1,6 @@
 # Slug/permalink field
 
-The table to use `slug` must be have column `name`. It's used to generate slug column.
+The table to use `slug` must have column `name`. It's used to generate slug column.
 
 ## Add slug/permalink field to your new plugin
 

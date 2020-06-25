@@ -9,7 +9,7 @@ The table to use `slug` must be have column `name`. It's used to generate slug c
 ```php
 $this->app->booted(function () {
    \SlugHelper::registerModule(YourPluginModel::class);
-   \SlugHelper::setPrefix(YourPluginModel::class, 'gallery');
+   \SlugHelper::setPrefix(YourPluginModel::class, 'your-prefix');
 });
 
 // "your-prefix" is prefix for your slug field. URL will be http://domain.local/your-prefix/slug-here
@@ -65,7 +65,7 @@ public function getBySlug($slug, \Botble\Slug\Repositories\Interfaces\SlugInterf
     if (!$slug) {
         abort(404);
     }
-    $data = $this->{yourPlugin}Repository->getFirstBy(['id' => $slug->reference_id, 'status' => 1]);
+    $data = $this->{yourPlugin}Repository->getFirstBy(['id' => $slug->reference_id]);
 
     if (!$data) {
         abort(404);

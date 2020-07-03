@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.6](#version_5_6)
 - [Botble 5.5](#version_5_5)
 - [Botble 5.4](#version_5_4)
 - [Botble 5.3](#version_5_3)
@@ -33,6 +34,20 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_6"></a>
+## Botble 5.6
+### 03-07-2020
+
+- Update to the latest Laravel version 7.18.
+- Optimize database queries.
+- Add support Recaptcha v3.
+- Improve cookie consent.
+- Fix bugs plugin Language & Custom fields.
+- Add default open graph image.
+- Improve dev tools.
+- Improve admin UI.
+- Refactor code.
 
 <a name="version_5_5"></a>
 ## Botble 5.5

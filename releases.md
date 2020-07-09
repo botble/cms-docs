@@ -35,6 +35,11 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
+## Botble 5.6.1
+### 09-07-2020
+
+- Add support DigitalOcean Spaces
+
 <a name="version_5_6"></a>
 ## Botble 5.6
 ### 03-07-2020

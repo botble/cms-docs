@@ -12,6 +12,7 @@
     - [Plugin structure](plugin-structure.md)
 - Theme development
     - [Overview](theme.md)
+    - [Routes](theme-routes.md)
     - [Assets](theme-assets.md)
     - [Menu](menu.md)
     - [Breadcrumb](theme-breadcrumb.md)

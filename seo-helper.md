@@ -43,3 +43,49 @@ $meta->addProperty('property-name', 'property-value');
 ```php
 \SeoHelper::getTitle();
 ```
+
+## Add new meta tags to page/post.
+
+### Add into blade files.
+
+Add to **platform/themes/[your-theme]/views/page.blade.php** or **platform/themes/[your-theme]/views/post.blade.php**
+
+```blade
+@php
+    SeoHelper::meta()->addMeta('robots', 'index, follow'); // SeoHelper::meta()->addMeta('[tag name]', '[tag content]')
+@endphp
+```
+
+You can add many meta tags as you want.
+
+Ex:
+
+```blade
+@php    
+    SeoHelper::meta()->addMeta('...', '...')
+        ->addMeta('...', '...')
+        ->addMeta('...', '...');
+@endphp
+```
+
+### Using hook
+
+You can hook to action **BASE_ACTION_PUBLIC_RENDER_SINGLE**.
+
+Ex: Add to **platform/themes/[your-theme]/functions/functions.php**.
+
+```php
+add_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, function ($screen, $data) {    
+    if (in_array($screen, [PAGE_MODULE_SCREEN_NAME, POST_MODULE_SCREEN_NAME])) {        
+        SeoHelper::meta()->addMeta('robots', 'index, follow');        
+        SeoHelper::openGraph()
+            ->addProperty('image:width', '600')            
+            ->addProperty('image:height', '300');
+        if ($data->image) {            
+            SeoHelper::twitter()->addImage(get_image_url($data->image));        
+        }    
+    }
+}, 120, 2);
+```
+
+> {warning} You can find all available methods for SeoHelper in platform/packages/seo-helper/src/SeoHelper.php.

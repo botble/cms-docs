@@ -13,11 +13,11 @@ Ex:
 __('Hello')
 ```
 
-To translate your theme to other language. Add .json file in `/platform/themes/<your-theme>/lang`.
+To translate your theme to other language. Add .json file in `/platform/themes/[your-theme]/lang`.
 
 Ex: to translate your theme to Vietnamese.
 
-`/platform/themes/your-theme/lang/vi.json`
+`/platform/themes/[your-theme]/lang/vi.json`
 
 ```json
 {

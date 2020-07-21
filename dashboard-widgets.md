@@ -71,14 +71,12 @@ add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
 - Create a controller to return main content for your widget, the route name is added in above code (Ex: `the-route-to-get-data`).
 
 ```php
-public function getDataForWidget(Request $request, BaseHttpResponse $response)
+public function getDataForWidget(\Illuminate\Http\Request $request, \Botble\Base\Http\Responses\BaseHttpResponse $response)
 {
     $content = 'The content can be a string or rendered from a blade view';
     
     // $content = view('plugins.your-plugin::widgets.sample', compact('data'))->render()
-    return $response
-        ->setError(false)
-        ->setData($content);
+    return $response->setData($content);
 }
 ```
 

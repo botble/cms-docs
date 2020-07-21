@@ -25,6 +25,17 @@ add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
 
 > {warning} You can find an example in platform/packages/page/src/Providers/HookServiceProvider.php line 57
 
+### Remove a stats widget by ID
+
+```php
+add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets) {
+    \Illuminate\Support\Arr::forget($widgets, '[Widget ID]');
+    return $widgets;
+}, 120, 1);
+```
+
+- [Widget ID] is ID of widget. Ex: `widget_total_plugins`. You can use `dd($widgets)` to find widget ID.
+
 ### Remove all stats widgets
 
 - Open your plugin service provider then add to the `boot` function or `platform/themes/[your-theme]/functions/functions.php`

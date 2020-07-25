@@ -56,6 +56,18 @@ How to use:
 {{ get_object_image($post->image, 'post-small') }}
 ```
 
+## Add more file extensions.
+
+By default, media management supports some file extensions: `jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav`.
+
+You can add more file extensions if you want. 
+
+Add to `.env`:
+
+```bash
+RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav
+```
+
 ## Custom upload
 
 You can create your custom upload with `RvMedia` facade.

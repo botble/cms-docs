@@ -28,14 +28,16 @@
 <a name="installation"></a>
 ## Install on hosting
 
-- Upload all files into `public_html`.
+> If you're a Laravel developer and you want to customize our source code in `platform/core` and `platform/packages`, you need to delete folder `/vendor` then run command `composer install` to reinstall vendor packages.
+
+- Upload all files into the root folder of your hosting (normally, it is`public_html`).
 - Create a database and import data from `database.sql` (it's located in source code).
 - Create `.env` from `.env.example` and update your database credentials.
 - Make sure `APP_URL` in `.env` is correct your domain. It should be `APP_URL=http://your-domain.com`
 
 ## Install locally or in VPS
 
-- Delete folder `/vendor` then run `composer install` to install vendor packages.
+> If you're a Laravel developer and you want to customize our source code in `platform/core` and `platform/packages`, you need to delete folder `/vendor` then run command `composer install` to reinstall vendor packages.
 
 - Create `.env` file from `.env-example` and update your configuration.
 

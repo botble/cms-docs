@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.7](#version_5_7)
 - [Botble 5.6](#version_5_6)
 - [Botble 5.5](#version_5_5)
 - [Botble 5.4](#version_5_4)
@@ -35,10 +36,19 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
-## Botble 5.6.1
-### 09-07-2020
-
-- Add support DigitalOcean Spaces
+## Botble 5.7
+### 05-08-2020
+- Upgrade to the latest Laravel framework version 7.22.
+- Deprecated some media functions: `is_image`, `get_image_url`, `get_object_image`, `rv_media_handle_upload`. 
+  Replacements: `RvMedia::isImage()`, `RvMedia::getImageUrl()`, `RvMedia::handleUpload()`.
+- Add theme options to change primary color.
+- Add support **Digital Ocean Spaces**.
+- Send an email to admin when someone create a new post.
+- Fix timezone, it doesn't work before.
+- Fix filter posts.
+- Update email settings. Add support **SES**, **Postmark**, **Array**, **Log**.
+- Improve performance & refactor source code.
+- Improve license system, make it works better.
 
 <a name="version_5_6"></a>
 ## Botble 5.6

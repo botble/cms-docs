@@ -129,6 +129,19 @@ Assets::addScripts(['input-mask']);
 ])
 ```
 
+### Date picker field
+
+```php
+->add('field_name', 'text', [
+    'label'         => __('Field label'),
+    'label_attr'    => ['class' => 'control-label'],
+    'attr'          => [
+        'class'        => 'form-control datepicker',
+    ],
+    'default_value' => now(config('app.timezone'))->format('m/d/Y'),
+])
+```
+
 ## Form layouts
 
 Default layout template for form is `core.base::forms.form`, you can set other layout for form.

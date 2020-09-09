@@ -61,3 +61,5 @@
     - Go to `/admin` to access to admin panel.
     - If you're using sample data, the default admin account is `botble` - `159357`.
     - If you don't use sample data, you need to go to Admin -> Plugins then activate all plugins.
+
+> {warning} If you're using sample data, default admin account: username `botble` and password `159357`

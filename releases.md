@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.8](#version_5_8)
 - [Botble 5.7](#version_5_7)
 - [Botble 5.6](#version_5_6)
 - [Botble 5.5](#version_5_5)
@@ -35,6 +36,24 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.8
+### 15-09-2020
+
+- Update to Laravel version 7.28
+- Update homepage & blog page settings. Now, it's moved into Appearance -> Theme options.
+- Move settings for Cookie Consent into Appearance -> Theme options.
+- Add theme options to enable/disable Facebook chat, Facebook comment.
+- Add settings for watermark. Now, you can add watermark by changing setting in Admin -> Settings -> Media.
+- Allow to change permalink in Admin -> Settings -> Permalinks.
+- Add language settings. Allow to set default language in Admin -> Settings -> General.
+- Allow admin to login using email or username.
+- Optimize queries to make site loads faster.
+- Update UI.
+- Refactor code.
+- Fix webpack.mix.js config, issue with path on Windows.
+- Fix assets path.
+- Fix copy folder in Admin -> Media.
 
 ## Botble 5.7
 ### 05-08-2020

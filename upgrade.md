@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.8](#upgrade-5.8)
 - [Upgrade To 5.7](#upgrade-5.7)
 - [Upgrade To 5.6](#upgrade-5.6)
 - [Upgrade To 5.5](#upgrade-5.5)
@@ -30,6 +31,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-5.8"></a>
+## Upgrade to 5.8
+
+- Override folder `app`, `config`, `platform`, `resources/lang` from the update source code.
+- Override file `composer.json` `and composer.lock` from the update source code.
+- Delete folder `vendor` then run `composer install` to re-install vendor packages
+- Run `php artisan migrate` to update database.
+- Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
 
 <a name="upgrade-5.7"></a>
 ## Upgrade to 5.7

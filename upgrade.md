@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.9](#upgrade-5.9)
 - [Upgrade To 5.8](#upgrade-5.8)
 - [Upgrade To 5.7](#upgrade-5.7)
 - [Upgrade To 5.6](#upgrade-5.6)
@@ -31,6 +32,23 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-5.9"></a>
+## Upgrade to 5.9
+
+- Override folder `app`, `config`, `platform`, and `resources/lang` from the latest version.
+
+- For developers:
+    - Update file `composer.json` and `composer.lock` from new source code.
+    - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
+    - Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
+    - Delete folder `public/themes` and run command `php artisan cms:theme:assets:publish`
+    - Run `php artisan optimize:clear` to clear cache.
+    
+- For non-developers:
+    - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
+    - Delete all files in `storage/framework/views` and `storage/framework/cache`.
+
 
 <a name="upgrade-5.8"></a>
 ## Upgrade to 5.8

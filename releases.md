@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.9](#version_5_9)
 - [Botble 5.8](#version_5_8)
 - [Botble 5.7](#version_5_7)
 - [Botble 5.6](#version_5_6)
@@ -36,6 +37,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.9
+### Oct 14, 2020
+- Fix multi-language with Ajax.
+- Fix views count.
+- Update contact form with Ajax.
+- Update email encryption settings.
+- Improve Recaptcha: add an option to hide v3 badge.
+- Improve export posts to csv, excel.
+- Apply PurgeCSS to remove unused css, make it loads faster.
+- Improve theme UI.
+- Refactor code.
 
 ## Botble 5.8
 ### 15-09-2020

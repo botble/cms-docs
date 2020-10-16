@@ -70,6 +70,18 @@ Direct path to theme asset.
 echo Theme::asset()->url('img/image.png');
 ```
 
+Remove added CSS/Js.
+
+Ex:
+
+```php
+// Add to platform/themes/[your-theme]/functions/functions.php
+app()->booted(function () {
+    Theme::asset()->remove('language-css');
+    Theme::asset()->container('footer')->remove('language-public-js');
+});
+```
+
 <a name="preparing-group-of-assets"></a>
 ## Preparing group of assets.
 

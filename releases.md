@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.10](#version_5_10)
 - [Botble 5.9](#version_5_9)
 - [Botble 5.8](#version_5_8)
 - [Botble 5.7](#version_5_7)
@@ -37,6 +38,23 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.10
+### Nov 14, 2020
+- Update menu: optimize queries, cache menu URL for better performance.
+- Optimize queries on menu & widgets.
+- Update Cookie consent: Add option to change background color, text color.
+- Update error pages, make it more beautiful.
+- Update UI contact form, galleries.
+- Improve permalink & custom CSS page.
+- Improve Analytics plugin, make it compatible with PHP 7.4.
+- Fix theme translations: new keys in English doesn't show in other languages.
+- Fix IP in activity logs, allow IP v6.
+- Add seeders: easy to create sample data with command php artisan db:seed.
+- Add command to activate all plugins in one time: php artisan cms:plugin:activate:all
+- Add functions to get popular blog categories.
+- Add mediaImages fields.
+- Refactor code.
 
 ## Botble 5.9
 ### Oct 15, 2020

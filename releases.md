@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.11](#version_5_11)
 - [Botble 5.10](#version_5_10)
 - [Botble 5.9](#version_5_9)
 - [Botble 5.8](#version_5_8)
@@ -38,6 +39,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.11
+### Dec 11, 2020
+- Improve Cookie Consent plugin.
+- Improve responsive.
+- Update translations, added missing keys.
+- Improve DO Spaces integration.
+- Fix roles & permissions.
+- Update UI for Ripple theme.
+- Update seeders, easy to generate sample data using command db:seed.
+- Update setting page & system info.
+- Optimize page speed and performance.
 
 ## Botble 5.10
 ### Nov 14, 2020

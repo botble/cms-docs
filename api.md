@@ -19,10 +19,10 @@ php artisan passport:install
 <a name="generate-docs"></a>
 ## Generate API document
 
-We're using https://github.com/mpociot/laravel-apidoc-generator to make API document. Run below command to generate docs.
+We're using https://github.com/knuckleswtf/scribe to make API document. Run below command to generate docs.
  
 ```
-php artisan apidoc:generate
+php artisan scribe:generate
 ```
 
 Go to `http://your-domain/docs` to see API document.

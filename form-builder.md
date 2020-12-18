@@ -11,10 +11,10 @@ $this
     ->setValidatorClass({Plugin}Request::class)
     ->withCustomFields()
     ->add('field_name', 'text', [
-        'label' => __('Field label'),
+        'label'      => __('Field label'),
         'label_attr' => ['class' => 'control-label required'],
-        'attr' => [
-            'placeholder' => __('Placeholder'),
+        'attr'       => [
+            'placeholder'  => __('Placeholder'),
             'data-counter' => 120,
         ],
     ]);
@@ -28,10 +28,10 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'text', [ // you can change "text" to "password", "email", "number" or "textarea"
-    'label' => __('Field name'),
+    'label'      => __('Field name'),
     'label_attr' => ['class' => 'control-label required'], // Add class "required" if that is mandatory field
-    'attr' => [
-        'placeholder' => __('Placeholder'),
+    'attr'       => [
+        'placeholder'  => __('Placeholder'),
         'data-counter' => 120, // Maximum characters
     ],
 ])
@@ -41,8 +41,8 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'onOff', [
-    'label' => __('Field label'),
-    'label_attr' => ['class' => 'control-label'],
+    'label'         => __('Field label'),
+    'label_attr'    => ['class' => 'control-label'],
     'default_value' => false,
 ])
 ```
@@ -51,9 +51,9 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'editor', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
-    'attr' => [
+    'attr'       => [
         'with-short-code' => false, // if true, it will add a button to select shortcode
         'without-buttons' => false, // if true, all buttons will be hidden
     ],
@@ -64,9 +64,9 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'select', [ // Change "select" to "customSelect" for better UI
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label required'], // Add class "required" if that is mandatory field
-    'choices' => [
+    'choices'    => [
         1 => __('Option 1'),
         2 => __('Option 2'),
     ],
@@ -77,9 +77,9 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'customRadio', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
-    'choices' => [
+    'choices'    => [
         ['option1', 'Option 1'],
         ['option2', 'Option 2'],
     ],
@@ -90,7 +90,7 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'mediaImage', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
 ])
 ```
@@ -99,7 +99,7 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'mediaImages', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
 ])
 ```
@@ -108,7 +108,7 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'color', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
 ])
 ```
@@ -117,7 +117,7 @@ If you want to show form field as mandatory field, add `required` class to label
 
 ```php
 ->add('field_name', 'time', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
 ])
 ```
@@ -129,7 +129,7 @@ If you want to show form field as mandatory field, add `required` class to label
 Assets::addScripts(['input-mask']);
 
 ->add('field_name', 'text', [
-    'label' => __('Field label'),
+    'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
     'attr'       => [
         'id'    => 'field_name',
@@ -145,9 +145,10 @@ Assets::addScripts(['input-mask']);
     'label'         => __('Field label'),
     'label_attr'    => ['class' => 'control-label'],
     'attr'          => [
-        'class'        => 'form-control datepicker',
+        'class'            => 'form-control datepicker',
+        'data-date-format' => 'yyyy/mm/dd',
     ],
-    'default_value' => now(config('app.timezone'))->format('m/d/Y'),
+    'default_value' => now(config('app.timezone'))->format('Y/m/d'),
 ])
 ```
 

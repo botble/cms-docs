@@ -22,8 +22,11 @@ Create callback for above action
 */
 function callback_function_to_handle_meta_box($screen, $context)
 {
-    if (is_plugin_active('blog') && $screen == POST_MODULE_SCREEN_NAME && $context == 'advanced') {
-        add_meta_box('additional_post_fields', __('Addition Information'), 'post_additional_fields', $screen, $context, 'default');
+    if (is_plugin_active('blog') && get_class($object) == \Botble\Blog\Models\Post::class && $context == 'advanced') {
+        MetaBox::addMetaBox('additional_post_fields', __('Addition Information'), 'post_additional_fields',
+            get_class($object),
+            $context,
+            'default');
     }
 }
 ```
@@ -37,7 +40,7 @@ add_meta_box(
     string $id, 
     string $title, 
     callable $callback, 
-    string $screen = null, 
+    string $class = null, 
     string $context = 'advanced', 
     string $priority = 'default', 
     array $callback_args = null
@@ -76,12 +79,13 @@ Example:
 ```php
 function post_additional_fields()
 {
-    $video_link = null;
+    $videoLink = null;
     $args = func_get_args();
     if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0], 'video_link', true);
+        $videoLink = MetaBox::getMetaData($args[0], 'video_link', true);
     }
-    return Theme::partial('post-fields', compact('video_link'));
+
+    return Theme::partial('post-fields', compact('videoLink'));
 }
 ```
 
@@ -106,8 +110,8 @@ add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3
 
 function save_addition_post_fields($type, $request, $object)
 {
-    if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object, 'video_link', $request->input('video_link'));
+    if (is_plugin_active('blog') && get_class($object) == \Botble\Blog\Models\Post::class) {
+        MetaBox::saveMetaBoxData($object, 'video_link', $request->input('video_link'));
     }
 }
 ```
@@ -117,23 +121,28 @@ function save_addition_post_fields($type, $request, $object)
 ** your-theme/functions/functions.php **
 
 ```php
-add_action(BASE_ACTION_META_BOXES, 'add_addition_fields_in_post_screen', 24, 3);
 
-function add_addition_fields_in_post_screen($screen, $context)
+add_action(BASE_ACTION_META_BOXES, 'add_addition_fields_in_post_screen', 24, 2);
+
+function add_addition_fields_in_post_screen($context, $object)
 {
-    if (is_plugin_active('blog') && $screen == POST_MODULE_SCREEN_NAME && $context == 'advanced') {
-        add_meta_box('additional_post_fields', __('Addition Information'), 'post_additional_fields', $screen, $context, 'default');
+    if (is_plugin_active('blog') && get_class($object) == \Botble\Blog\Models\Post::class && $context == 'advanced') {
+        MetaBox::addMetaBox('additional_post_fields', __('Addition Information'), 'post_additional_fields',
+            get_class($object),
+            $context,
+            'default');
     }
 }
 
 function post_additional_fields()
 {
-    $video_link = null;
+    $videoLink = null;
     $args = func_get_args();
     if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0], 'video_link', true);
+        $videoLink = MetaBox::getMetaData($args[0], 'video_link', true);
     }
-    return Theme::partial('post-fields', compact('video_link'));
+
+    return Theme::partial('post-fields', compact('videoLink'));
 }
 
 add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_post_fields', 230, 3);
@@ -141,8 +150,8 @@ add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3
 
 function save_addition_post_fields($type, $request, $object)
 {
-    if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object, 'video_link', $request->input('video_link'));
+    if (is_plugin_active('blog') && get_class($object) == \Botble\Blog\Models\Post::class) {
+        MetaBox::saveMetaBoxData($object, 'video_link', $request->input('video_link'));
     }
 }
 ```
@@ -151,7 +160,7 @@ function save_addition_post_fields($type, $request, $object)
 
 ```html
 <div class="form-group">
-    <label for="video_link">{{ __('Video') }}</label>
-    {!! Form::text('video_link', $video_link, ['class' => 'form-control', 'id' => 'video_link']) !!}
+    <label for="video-link">{{ __('Video') }}</label>
+    {!! Form::text('video_link', $videoLink, ['class' => 'form-control', 'id' => 'video-link']) !!}
 </div>
 ```

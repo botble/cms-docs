@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.12](#version_5_12)
 - [Botble 5.11](#version_5_11)
 - [Botble 5.10](#version_5_10)
 - [Botble 5.9](#version_5_9)
@@ -39,6 +40,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.12
+### Jan 19, 2021
+- Update seeders.
+- Update error pages, make it more simple.
+- Improve UI gallery images, update Google fonts & fix cookie consent.
+- Improve media URL.
+- Improve core & optimize queries.
+- Remove theme NewsTV.
+- Remove unused CSS/JS libraries.
+- Fix postCSS, upgrade to Laravel Mix 6.0
+- Fix responsive for tables on Member dashboard.
 
 ## Botble 5.11
 ### Dec 11, 2020

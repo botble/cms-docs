@@ -5,8 +5,6 @@
 - [Deactivate plugin](#deactivate-plugin)
 - [Remove plugin](#remove-plugin)
 
-> {info}From version 3.2, command name is changed from `plugin:create` to `cms:plugin:create`. Please run `php artisan --help` to see all commands
-
 > {warning} Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
 
 <a name="create-plugin"></a>

@@ -27,6 +27,9 @@ register_sidebar([
 
 <a name="create_widget"></a>
 ## Create Widget
+
+> {warning} Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
+
 1/ To create a widget, using below command:
     
 ```php

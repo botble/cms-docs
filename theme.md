@@ -8,6 +8,7 @@
 - [Preparing data to view](#preparing-data-to-view)
 - [Using theme global](#using-theme-global)
 
+> {warning} Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
 
 <a name="command_generate"></a>
 ## Create theme with artisan CLI

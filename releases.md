@@ -50,7 +50,7 @@
 - Improve permalinks.
 - Fix language plugin.
 - Fix bugs on PHP 8.
-- Refactor code & optimize UI
+- Refactor code & optimize UI.
 
 ## Botble 5.12
 ### Jan 19, 2021

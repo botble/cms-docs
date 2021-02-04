@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.13](#version_5_13)
 - [Botble 5.12](#version_5_12)
 - [Botble 5.11](#version_5_11)
 - [Botble 5.10](#version_5_10)
@@ -40,6 +41,16 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+## Botble 5.13
+### Feb 04, 2021
+- Upgraded to Laravel 8.
+- Update JS/CSS assets.
+- Improve admin language settings.
+- Improve permalinks.
+- Fix language plugin.
+- Fix bugs on PHP 8.
+- Refactor code & optimize UI
 
 ## Botble 5.12
 ### Jan 19, 2021

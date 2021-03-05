@@ -279,3 +279,8 @@ public function getIndex()
     $this->theme->of('somewhere.index')->render();
 }
 ```
+
+## Rename the theme to the new name
+- Rename folder platform/themes/[new-name].
+- Open table `settings` and replace all key `theme-[current-theme-name]` to `theme-[new-name]`.
+- Open table `widgets` and replace all values in `theme` column to the new name `[new-name]`.

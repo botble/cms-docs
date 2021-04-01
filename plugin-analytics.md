@@ -27,9 +27,13 @@ Integrate with Google Analytics
 
 ![Image](https://botble.com/storage/uploads/1/analytics/step7.png)
 
-- Open JSON file and copy its content, then go to /admin/settings/general and update JSON credentials data for Analytics plugin:
+- Open JSON file and copy its content, then go to Admin -> Settings -> General (/admin/settings/general) and update field "Service Account Credentials" in Analytics plugin settings by the content from JSON file:
 
 ![Image](https://botble.com/storage/uploads/1/analytics/step8.png)
+
+It will look like this:
+
+![Image](https://live.staticflickr.com/65535/51017973085_711a45d2f1_b.jpg)
 
 - Go to Google Analytics account: https://analytics.google.com/analytics/web/. Click on "Admin" => "View Settings" and copy "View ID" number, then go to /admin/settings/general and tab "Google Analytics" and paste to field View ID.
 

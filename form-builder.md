@@ -101,6 +101,7 @@ If you want to show form field as mandatory field, add `required` class to label
 ->add('field_name', 'mediaImages', [
     'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
+    'values'     => [],
 ])
 ```
 

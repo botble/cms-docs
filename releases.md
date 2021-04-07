@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.15](#version_5_15)
 - [Botble 5.14](#version_5_14)
 - [Botble 5.13](#version_5_13)
 - [Botble 5.12](#version_5_12)
@@ -43,6 +44,17 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
+<a name="version_5_15"></a>
+## Botble 5.14
+### Mar 02, 2021
+- Add option to turn off automatic URL translation into Latin.
+- Add command to rename the theme to the new name.
+- Add option to force URL & schema.
+- Improve email templates.
+- Fix bug Serialization of 'GdImage' is not allowed.
+- Refactor code & optimize performance.
+
+<a name="version_5_14"></a>
 ## Botble 5.14
 ### Mar 02, 2021
 - New option to add custom JS in Admin -> Appearance -> Custom JS.
@@ -55,6 +67,7 @@
 - Fix field File in Custom Fields plugin.
 - Fix some bugs on PHP 8.
 
+<a name="version_5_13"></a>
 ## Botble 5.13
 ### Feb 04, 2021
 - Upgraded to Laravel 8.
@@ -65,6 +78,7 @@
 - Fix bugs on PHP 8.
 - Refactor code & optimize UI.
 
+<a name="version_5_12"></a>
 ## Botble 5.12
 ### Jan 19, 2021
 - Update seeders.
@@ -77,6 +91,7 @@
 - Fix postCSS, upgrade to Laravel Mix 6.0
 - Fix responsive for tables on Member dashboard.
 
+<a name="version_5_11"></a>
 ## Botble 5.11
 ### Dec 11, 2020
 - Improve Cookie Consent plugin.
@@ -89,6 +104,7 @@
 - Update setting page & system info.
 - Optimize page speed and performance.
 
+<a name="version_5_10"></a>
 ## Botble 5.10
 ### Nov 14, 2020
 - Update menu: optimize queries, cache menu URL for better performance.
@@ -106,6 +122,7 @@
 - Add mediaImages fields.
 - Refactor code.
 
+<a name="version_5_9"></a>
 ## Botble 5.9
 ### Oct 15, 2020
 - Fix multi-language with Ajax.
@@ -118,9 +135,9 @@
 - Improve theme UI.
 - Refactor code.
 
+<a name="version_5_8"></a>
 ## Botble 5.8
 ### 15-09-2020
-
 - Update to Laravel version 7.28
 - Update homepage & blog page settings. Now, it's moved into Appearance -> Theme options.
 - Move settings for Cookie Consent into Appearance -> Theme options.
@@ -136,6 +153,7 @@
 - Fix assets path.
 - Fix copy folder in Admin -> Media.
 
+<a name="version_5_7"></a>
 ## Botble 5.7
 ### 05-08-2020
 - Upgrade to the latest Laravel framework version 7.22.
@@ -153,7 +171,6 @@
 <a name="version_5_6"></a>
 ## Botble 5.6
 ### 03-07-2020
-
 - Update to the latest Laravel version 7.18.
 - Optimize database queries.
 - Add support Recaptcha v3.
@@ -177,11 +194,9 @@
 - Improve admin UI.
 - Refactor code.
 
-
 <a name="version_5_4"></a>
 ## Botble 5.4
 ### 01-05-2020
-
 - Update to the latest Laravel version 7.8.
 - Refactor code & optimize performance.
 - Add backup commands:

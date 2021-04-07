@@ -45,8 +45,8 @@
 - [Botble 1.0](#version_1_0)
 
 <a name="version_5_15"></a>
-## Botble 5.14
-### Mar 02, 2021
+## Botble 5.15
+### Apr 07, 2021
 - Add option to turn off automatic URL translation into Latin.
 - Add command to rename the theme to the new name.
 - Add option to force URL & schema.

@@ -76,4 +76,4 @@ And to show menu with custom view, using below code:
 !!}
 ```
 
-Menu in the location 'main-menu' will be generated using custom view in `/public/themes/your-theme/partials/custom-menu.blade.php`
+Menu in the location 'main-menu' will be generated using custom view in `/platform/themes/your-theme/partials/custom-menu.blade.php`

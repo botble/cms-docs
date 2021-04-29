@@ -20,6 +20,6 @@ You need to install an SSL certificate on your hosting/VPS first. You can purcha
         FORCE_ROOT_URL=https://domain.com  
         ENABLE_HTTPS_SUPPORT=false
       ```
-    - Option 3: If you are using a hosting and Cpanel, you can Force HTTPS Redirection for your domains. Check this article: https://blog.cpanel.com/force-https-redirection/#:~:text=In%20the%20Domains%20interface%20in,HTTPS)%20with%20a%20toggle%20switch.
+    - Option 3: If you are using hosting and Cpanel, you can Force HTTPS Redirection for your domains. Check this article: https://blog.cpanel.com/force-https-redirection/#:~:text=In%20the%20Domains%20interface%20in,HTTPS)%20with%20a%20toggle%20switch.
 
 >  {warning} If it doesn't work, you have to config it in .htaccess or Nginx config.

@@ -11,7 +11,7 @@ You need to install an SSL certificate on your hosting/VPS first. You can purcha
 <a name="redirect-http-to-https"></a>
 ## Redirect http to https
 
-- Step 1: Change in .env `APP_URL=http://domain.com` to `APP_URL=https://domain.com`.
+- Step 1: Change in **.env** `APP_URL=http://domain.com` to `APP_URL=https://domain.com`.
 - Step 2:
     - Option 1: Add to **.env** `ENABLE_HTTPS_SUPPORT=true`.
     - Option 2: Add to **.env**:

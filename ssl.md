@@ -1,4 +1,4 @@
-# Mail
+# SSL
 
 - [Install SSL certificate on your hosting/VPS](#install-ssl-certificate-on-your-hostingvps)
 - [Redirect http to https](#redirect-http-to-https)

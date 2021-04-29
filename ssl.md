@@ -20,4 +20,5 @@ You need to install an SSL certificate on your hosting/VPS first. You can purcha
         FORCE_ROOT_URL=https://domain.com  
         ENABLE_HTTPS_SUPPORT=false
       ```
-If it doesn't work, you have to config it in .htaccess or Nginx config.
+
+>  {warning} If it doesn't work, you have to config it in .htaccess or Nginx config.

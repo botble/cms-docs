@@ -105,6 +105,15 @@ If you want to show form field as mandatory field, add `required` class to label
 ])
 ```
 
+### File field
+
+```php
+->add('field_name', 'mediaFile', [
+    'label'      => __('Field label'),
+    'label_attr' => ['class' => 'control-label'],
+])
+```
+
 ### Color field
 
 ```php

@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.16](#version_5_16)
 - [Botble 5.15](#version_5_15)
 - [Botble 5.14](#version_5_14)
 - [Botble 5.13](#version_5_13)
@@ -43,6 +44,16 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_16"></a>
+## Botble 5.16
+### May 10, 2021
+- Fix change user's password.
+- Remove unused services in Google Client API services to reduce app size.
+- Fix color field.
+- Update theme options & handle errors when saving custom CSS.
+- Optimize queries.
+- Refactor code & improve performance.
 
 <a name="version_5_15"></a>
 ## Botble 5.15

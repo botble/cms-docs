@@ -208,3 +208,56 @@ for theme option with HTML content.
     'helper' => __('Helper for this field (optional)'),
 ]);
 ```
+
+- Repeater fields
+
+```php
+->setField([
+    'id'         => 'options_name',
+    'section_id' => 'opt-text-subsection-general',
+    'type'       => 'repeater',
+    'label'      => __('Repeater fields'),
+    'attributes' => [
+        'name'   => 'options_name',
+        'value'  => null,
+        'fields' => [
+            [
+                'type'       => 'text',
+                'label'      => __('Text'),
+                'label_attr' => ['class' => 'control-label required'],
+                'attributes' => [
+                    'name'    => 'text',
+                    'value'   => null,
+                    'options' => [
+                        'class'        => 'form-control',
+                        'data-counter' => 255,
+                    ],
+                ],
+            ],
+            [
+                'type'       => 'mediaImage',
+                'label'      => __('Image'),
+                'label_attr' => ['class' => 'control-label'],
+                'attributes' => [
+                    'name'  => 'image',
+                    'value' => null,
+                ],
+            ],
+            [
+                'type'       => 'textarea',
+                'label'      => __('Textarea'),
+                'label_attr' => ['class' => 'control-label'],
+                'attributes' => [
+                    'name'    => 'textarea',
+                    'value'   => null,
+                    'options' => [
+                        'class'        => 'form-control',
+                        'data-counter' => 255,
+                        'rows'         => 3,
+                    ],
+                ],
+            ],
+        ],
+    ],
+])
+```

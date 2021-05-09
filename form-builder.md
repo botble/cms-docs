@@ -162,6 +162,53 @@ Assets::addScripts(['input-mask']);
 ])
 ```
 
+### Repeater fields
+
+```php
+->add('options', 'repeater', [
+    'label'      => __('Repeater field'),
+    'label_attr' => ['class' => 'control-label'],
+    'fields' => [
+        [
+            'type'       => 'text',
+            'label'      => __('Text'),
+            'label_attr' => ['class' => 'control-label required'],
+            'attributes' => [
+                'name'    => 'text',
+                'value'   => null,
+                'options' => [
+                    'class'        => 'form-control',
+                    'data-counter' => 255,
+                ],
+            ],
+        ],
+        [
+            'type' => 'mediaImage',
+            'label'      => __('Image'),
+            'label_attr' => ['class' => 'control-label'],
+            'attributes' => [
+                'name'    => 'image',
+                'value'   => null,
+            ],
+        ],
+        [
+            'type'       => 'textarea',
+            'label'      => __('Textarea'),
+            'label_attr' => ['class' => 'control-label'],
+            'attributes' => [
+                'name'    => 'textarea',
+                'value'   => null,
+                'options' => [
+                    'class'        => 'form-control',
+                    'data-counter' => 255,
+                    'rows' => 3,
+                ],
+            ],
+        ],
+    ]
+])
+```
+
 ## Form layouts
 
 Default layout template for form is `core.base::forms.form`, you can set other layout for form.

@@ -224,7 +224,6 @@ for theme option with HTML content.
             [
                 'type'       => 'text',
                 'label'      => __('Text'),
-                'label_attr' => ['class' => 'control-label required'],
                 'attributes' => [
                     'name'    => 'text',
                     'value'   => null,
@@ -237,7 +236,6 @@ for theme option with HTML content.
             [
                 'type'       => 'mediaImage',
                 'label'      => __('Image'),
-                'label_attr' => ['class' => 'control-label'],
                 'attributes' => [
                     'name'  => 'image',
                     'value' => null,
@@ -246,7 +244,6 @@ for theme option with HTML content.
             [
                 'type'       => 'textarea',
                 'label'      => __('Textarea'),
-                'label_attr' => ['class' => 'control-label'],
                 'attributes' => [
                     'name'    => 'textarea',
                     'value'   => null,

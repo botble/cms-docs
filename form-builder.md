@@ -274,6 +274,8 @@ function add_addition_fields_into_form($form, $data)
             ]);
 
     }
+    
+    return $form;
 }
 
 add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_fields', 120, 3);

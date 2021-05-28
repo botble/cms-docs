@@ -54,7 +54,8 @@ If you are using Cpanel, you can follow this article to change your PHP memory l
 - Create `.env` file from `.env-example` and update your configuration.
 
 - Using sample data: 
-    - Import database from `database.sql`.
+    - Option 1: Import database from `database.sql`.
+    - Option 2: Run `php artisan migrate --seed`
     
 - Don't use sample data:
     - Run `php artisan migrate` to create database structure.

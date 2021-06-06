@@ -18,6 +18,8 @@ Currently, this plugin support **Pages** and **Blog**.
 
 #### View how to use it:
 
+Check video tutorial: https://www.youtube.com/watch?v=aju8b1MhWbE
+
 **get_field**: get a custom field from a model
 ```php
 get_field($data, $alias = null, $default = null)
@@ -28,6 +30,18 @@ Example:
 $page = \Botble\Page\Models\Page::find(1);
 $field = get_field($page, 'foo');
 ```
+
+If you display field in platform/themes/[your-theme]/views/page.blade.php:
+
+```php
+{{ get_field($page, 'field_name') }} 
+````
+
+If you display field in platform/themes/[your-theme]/views/post.blade.php:
+
+```php
+{{ get_field($post, 'field_name') }}
+````
 
 **has_field**: determine a model has custom field or not
 ```php

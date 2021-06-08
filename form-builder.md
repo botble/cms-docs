@@ -255,19 +255,17 @@ If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md
 ## Add more columns into existed form
 
 ```php
-add_filter(BASE_FILTER_BEFORE_RENDER_FORM, 'add_addition_fields_into_form', 120, 3);
-
-/**
- * @param \Botble\Base\Forms\FormAbstract $form
- * @param $data
- */
-function add_addition_fields_into_form($form, $data)
+add_filter(BASE_FILTER_BEFORE_RENDER_FORM, function ($form, $data)
 {
     if (get_class($data) == \Botble\Blog\Models\Post::class) {
+    
+        $test = \MetaBox::getMetaData($data, 'test', true);
+    
         $form
             ->add('test', 'text', [
                 'label'      => __('Test Field'),
                 'label_attr' => ['class' => 'control-label'],
+                'value'      => $test,
                 'attr'       => [
                     'placeholder' => __('Test'),
                 ],
@@ -276,7 +274,7 @@ function add_addition_fields_into_form($form, $data)
     }
     
     return $form;
-}
+}, 120, 3);
 
 add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_fields', 120, 3);
 add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_fields', 120, 3);
@@ -284,13 +282,18 @@ add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_fields', 120, 3);
 /**
  * @param string $screen
  * @param Request $request
- * @param Model $object
+ * @param Model $data
  */
-function save_addition_fields($screen, $request, $object)
+function save_addition_fields($screen, $request, $data)
 {
-    if ($screen == POST_MODULE_SCREEN_NAME) {
-        $object->test = $request->input('test');
-        $object->save();
+    if (get_class($data) == \Botble\Blog\Models\Post::class) {
+        MetaBox::saveMetaBoxData($data, 'test', $request->input('test'));
     }
 }
+```
+
+Display the value of Test field in platform/themes/[your-theme]/views/post.blade.php.
+
+```php
+    \MetaBox::getMetaData($post, 'test', true);
 ```

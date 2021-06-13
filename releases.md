@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.17](#version_5_17)
 - [Botble 5.16](#version_5_16)
 - [Botble 5.15](#version_5_15)
 - [Botble 5.14](#version_5_14)
@@ -44,6 +45,17 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_17"></a>
+## Botble 5.17
+### Jun 13, 2021
+- Added RTL support for the admin panel.
+- Fix some errors on PHP 8.
+- Fix blog API.
+- Improve media, fix some errors with SVG.
+- Improve UI.
+- Optimize queries.
+- Refactor code & improve performance.
 
 <a name="version_5_16"></a>
 ## Botble 5.16

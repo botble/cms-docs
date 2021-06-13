@@ -254,6 +254,8 @@ If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md
 
 ## Add more columns into existed form
 
+Check this video tutorial: https://youtu.be/5PC6mzssZ70
+
 ```php
 add_filter(BASE_FILTER_BEFORE_RENDER_FORM, function ($form, $data)
 {

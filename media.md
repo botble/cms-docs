@@ -7,7 +7,9 @@
 Make sure you have done following steps:
 
 - Make sure `APP_URL` in `.env` is correct.
-- Go to Admin -> Settings -> Media and set Driver to `Public`.
+- Make sure PHP extension `GD` or `Imagick` is enabled.
+- Chmod folder `public/storage` to make it writeable.
+- Go to Admin -> Settings -> Media and set Driver to `Local`.
 
 ## Change media image sizes
 
@@ -58,14 +60,14 @@ How to use:
 
 ## Add more file extensions.
 
-By default, media management supports some file extensions: `jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav`.
+By default, media management supports some file extensions: `jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav,webp`.
 
 You can add more file extensions if you want. 
 
 Add to `.env`:
 
 ```bash
-RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav
+RV_MEDIA_ALLOWED_MIME_TYPES=RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav,webp
 ```
 
 ## Custom upload

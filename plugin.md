@@ -7,8 +7,12 @@
 
 > {warning} Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
 
+## Commands
+
+- Check this video: https://www.youtube.com/watch?v=JAiKnnb9dH8
+
 <a name="create-plugin"></a>
-## Create a plugin
+### Create a plugin
 **- Open CMD or Terminal then run:**
 
 ```bash
@@ -24,7 +28,7 @@ php artisan cms:plugin:activate <plugin name>
 ```
 
 <a name="deactivate-plugin"></a>
-## Deactivate a plugin
+### Deactivate a plugin
 **- Open CMD or Terminal then run:**
 
 ```bash
@@ -32,7 +36,7 @@ php artisan cms:plugin:deactivate <plugin name>
 ```
      
 <a name="remove-plugin"></a>
-## Remove a plugin
+### Remove a plugin
 **- Command:**
 
 ```bash
@@ -48,3 +52,9 @@ When you run this command. It will do:
 + It will be remove `demo` table and its permissions
 
 + Delete folder demo in `/plugins` and delete `/plugins` directory if it's empty
+
+## Video tutorials
+- Make CRUD inside an existed plugin: https://www.youtube.com/watch?v=GAnoZbGHE28
+- Adding new fields to an existing form: https://www.youtube.com/watch?v=5PC6mzssZ70
+- Display plugin data on the front theme: https://www.youtube.com/watch?v=YgrfEXK2TBo
+- Working with SEO helpers: https://www.youtube.com/watch?v=S0tlbt0K44c

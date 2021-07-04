@@ -58,3 +58,7 @@ A widget will have 3 files: This main class to init widget.
 * Main file is main class to init widget. Ex: `/platform/themes/ripple/widgets/tags/tags.php`
 * A file to display frontend view. Ex: `/platform/themes/ripple/widgets/tags/templates/frontend.php`
 * A file to display backend view. Ex: `/platform/themes/ripple/widgets/tags/templates/backend.php`
+
+## Video tutorials
+- Overview: https://www.youtube.com/watch?v=FXQwT_95jdA
+

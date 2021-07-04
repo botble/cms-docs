@@ -117,3 +117,7 @@ $this->app->booted(function () {
     }
 });
 ```
+
+## Video tutorials
+- Working with Custom Fields plugin: https://www.youtube.com/watch?v=aju8b1MhWbE
+- Generate FAQ rich snippet using Custom Fields: https://www.youtube.com/watch?v=mEMOy3BMnYI

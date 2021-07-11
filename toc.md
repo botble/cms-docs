@@ -53,5 +53,5 @@
     - [Language](plugin-language.md)
   
 - Usage
-  - [Setup mail](usage-mail.md)
+  - [Setup email](usage-email.md)
     

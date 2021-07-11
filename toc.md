@@ -51,4 +51,7 @@
     - [Gallery](plugin-gallery.md)
     - [Backup](plugin-backup.md)
     - [Language](plugin-language.md)
+  
+- Usage
+  - [Setup mail](usage-mail.md)
     

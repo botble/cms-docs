@@ -45,7 +45,6 @@
     - [FAQ](faq.md)
     
 - Plugins
-    - [Analytics](plugin-analytics.md)
     - [Custom fields](plugin-custom-field.md)
     - [Contact form](plugin-contact-form.md)
     - [Gallery](plugin-gallery.md)
@@ -54,4 +53,5 @@
   
 - Usage
   - [Setup email](usage-email.md)
+  - [Analytics](usage-analytics.md)
     

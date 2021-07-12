@@ -8,7 +8,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-PHP platform based on Laravel Framework 7.x
+PHP platform based on Laravel Framework 8.x
 
 Created: `07/06/2016`
 

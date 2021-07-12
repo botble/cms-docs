@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.18](#version_5_18)
 - [Botble 5.17](#version_5_17)
 - [Botble 5.16](#version_5_16)
 - [Botble 5.15](#version_5_15)
@@ -45,6 +46,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+
+<a name="version_5_18"></a>
+## Botble 5.18
+### Jul 11, 2021
+- Add Wasabi cloud storage support.
+- Allow to config the default placeholder image.
+- Improve media, translations & backup.
+- Improve UI.
+- Optimize queries.
+- Refactor code & improve performance.
+- Fix some bugs on PHP 8.
 
 <a name="version_5_17"></a>
 ## Botble 5.17

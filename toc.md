@@ -53,5 +53,5 @@
   
 - Usage
   - [Setup email](usage-email.md)
-  - [Analytics](usage-analytics.md)
+  - [Analytics](plugin-analytics.md)
     

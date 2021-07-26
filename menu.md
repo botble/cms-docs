@@ -16,7 +16,7 @@
 
 ```php
     {!!
-        Menu::renderMenuLocation('main-menu', [ // 
+        Menu::renderMenuLocation('main-menu', [ 
             'options' => [],
             'theme'   => true,
         ])

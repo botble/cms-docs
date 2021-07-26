@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.19](#version_5_19)
 - [Botble 5.18](#version_5_18)
 - [Botble 5.17](#version_5_17)
 - [Botble 5.16](#version_5_16)
@@ -46,6 +47,14 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_19"></a>
+## Botble 5.19
+### Jul 25, 2021
+- Update CKEditor and TinyMCE to the latest version (version 5).
+- Update media: Add a button to download media files from URL.
+- Able to add multiple admin emails in Admin -> Settings -> General.
+- Big change on blog categories. Hierarchical tree structured category https://prnt.sc/1g4dr0n.
 
 
 <a name="version_5_18"></a>

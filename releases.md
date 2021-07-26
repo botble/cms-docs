@@ -50,7 +50,7 @@
 
 <a name="version_5_19"></a>
 ## Botble 5.19
-### Jul 25, 2021
+### Jul 27, 2021
 - Update CKEditor and TinyMCE to the latest version (version 5).
 - Update media: Add a button to download media files from URL.
 - Able to add multiple admin emails in Admin -> Settings -> General.

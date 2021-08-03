@@ -98,12 +98,14 @@ If you want to show form field as mandatory field, add `required` class to label
 ### List of images field 
 
 ```php
-->add('field_name', 'mediaImages', [
+->add('field_name[]', 'mediaImages', [
     'label'      => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
-    'values'     => [],
+    'values'     => $this->model ? json_decode($this->field_name, true) : [],,
 ])
 ```
+
+Example: https://www.loom.com/share/25ede29d654b49a98bc9e7dbcc428f66
 
 ### File field
 

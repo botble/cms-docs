@@ -54,7 +54,7 @@ So you can add short code to page or post content then shortcode should be displ
 
 If you want to show shortcode in other pages, please add them to theme view composer.
 
-Or you can render shortcode by manually. Using function `do_short_code`.
+Or you can render shortcode by manually. Using function `do_shortcode()`.
 
 ```php
 do_shortcode(string $content)

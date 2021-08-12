@@ -58,8 +58,7 @@
   - Run `php artisan optimize:clear` to clear cache.
 
 - For non-developers:
-  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
-  - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
   
@@ -78,8 +77,7 @@
   - Run `php artisan optimize:clear` to clear cache.
 
 - For non-developers:
-  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
-  - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
   
@@ -98,8 +96,7 @@
   - Run `php artisan optimize:clear` to clear cache.
 
 - For non-developers:
-  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
-  - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
   
@@ -118,8 +115,7 @@
   - Run `php artisan optimize:clear` to clear cache.
 
 - For non-developers:
-  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
-  - Override folder `public/themes`, `public/vendor`, `bootstrap`, `vendor` from the latest version.
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
   

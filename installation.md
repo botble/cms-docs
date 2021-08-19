@@ -65,8 +65,7 @@ If you are using Cpanel, you can follow this article to change your PHP memory l
     - Run `php artisan cms:theme:activate ripple`
 
 - If you're pulled source code from GIT server:
-    - Run `php artisan vendor:publish --tag=cms-public --force`
-    - Run `php artisan cms:theme:assets:publish`
+    - Run `php artisan cms:publish:assets`
 
 - Run web locally:
     - Change `APP_URL` in `.env` to `APP_URL=http://localhost:8000`

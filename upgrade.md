@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.20](#upgrade-5.20)
 - [Upgrade To 5.19](#upgrade-5.19)
 - [Upgrade To 5.18](#upgrade-5.18)
 - [Upgrade To 5.17](#upgrade-5.17)
@@ -43,6 +44,24 @@
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
 
+<a name="upgrade-5.20"></a>
+## Upgrade to 5.20
+
+>  {warning} This version requires PHP >= 7.3, make sure your hosting support PHP 7.3 or higher.
+
+- For developers:
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
+  - Update file `composer.json` and `composer.lock` from new source code.
+  - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
+  - Run `php artisan cms:publish:assets`.
+  - Run command `php artisan vendor:publish --tag=cms-lang --force` to update translations.
+  - Run `php artisan optimize:clear` to clear cache.
+
+- For non-developers:
+  - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
+  - Delete all files in `storage/framework/views` and `storage/framework/cache`.
+  - Go to Admin -> Translations -> Admin translations then click on `Import group` to update translations.
+  - 
 <a name="upgrade-5.19"></a>
 ## Upgrade to 5.19
 
@@ -52,8 +71,7 @@
   - Override folder `app`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
   - Update file `composer.json` and `composer.lock` from new source code.
   - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
-  - Delete folder `public/vendor` and run command `php artisan vendor:publish --tag=cms-public --force`
-  - Delete folder `public/themes` and run command `php artisan cms:theme:assets:publish`
+  - Run `php artisan cms:publish:assets`.
   - Run command `php artisan vendor:publish --tag=cms-lang --force` to update translations.
   - Run `php artisan optimize:clear` to clear cache.
 

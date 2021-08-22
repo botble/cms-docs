@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.20](#version_5_20)
 - [Botble 5.19](#version_5_19)
 - [Botble 5.18](#version_5_18)
 - [Botble 5.17](#version_5_17)
@@ -48,6 +49,18 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
+<a name="version_5_20"></a>
+## Botble 5.20
+### Aug 23, 2021
+- Fix social login.
+- Fix editor in Custom Fields.
+- Fix Contact plugin with the new editor.
+- Improve shortcode. Make it easier to modify added shortcodes.
+- Improve editor & clean XSS.
+- Update to the latest Laravel version 8.55.0
+- Improve core.
+- Optimize queries performance.
+
 <a name="version_5_19"></a>
 ## Botble 5.19
 ### Jul 27, 2021
@@ -55,7 +68,6 @@
 - Update media: Add a button to download media files from URL.
 - Able to add multiple admin emails in Admin -> Settings -> General.
 - Big change on blog categories. Hierarchical tree structured category https://prnt.sc/1g4dr0n.
-
 
 <a name="version_5_18"></a>
 ## Botble 5.18

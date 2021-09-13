@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.21](#version_5_21)
 - [Botble 5.20](#version_5_20)
 - [Botble 5.19](#version_5_19)
 - [Botble 5.18](#version_5_18)
@@ -48,6 +49,21 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_20"></a>
+## Botble 5.20
+### Sep 14, 2021
+- Fix theme migration & issue when activating plugin Language.
+- Fix admin email.
+- Fix cache issue in media.
+- Improve theme custom CSS/JS.
+- Improve plugin Member, Blog & Newsletter.
+- Improve allowed iframe types.
+- Handle TokenMismatchException.
+- Prevent error when missing watermark image.
+- Update to the latest Laravel version 8.60.0
+- Improve core.
+- Optimize queries performance.
 
 <a name="version_5_20"></a>
 ## Botble 5.20

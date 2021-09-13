@@ -50,8 +50,8 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
-<a name="version_5_20"></a>
-## Botble 5.20
+<a name="version_5_21"></a>
+## Botble 5.21
 ### Sep 14, 2021
 - Fix theme migration & issue when activating plugin Language.
 - Fix admin email.

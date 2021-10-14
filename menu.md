@@ -30,7 +30,7 @@
 ## Add new menu location
 
 ```php
-   Menu:addMenuLocation('menu-location-key', 'Description here');
+   Menu::addMenuLocation('menu-location-key', 'Description here');
 ```
 
 ## Remove a menu location

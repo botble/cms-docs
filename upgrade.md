@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.22](#upgrade-5.22)
 - [Upgrade To 5.21](#upgrade-5.21)
 - [Upgrade To 5.20](#upgrade-5.20)
 - [Upgrade To 5.19](#upgrade-5.19)
@@ -45,6 +46,26 @@
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
 
+<a name="upgrade-5.22"></a>
+## Upgrade to 5.22
+
+>  {warning} This version requires PHP >= 7.3, make sure your hosting support PHP 7.3 or higher.
+
+- For developers:
+  - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor` and `public/index.php` from the latest version.
+  - Update file `composer.json` and `composer.lock` from new source code.
+  - Delete folder `/vendor` then run `composer install` to upgrade vendor packages.
+  - Run `php artisan cms:publish:assets`.
+  - Run command `php artisan vendor:publish --tag=cms-lang --force` to update translations.
+  - Run `php artisan optimize:clear` to clear cache.
+
+- For non-developers:
+  - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
+  - Delete all files in `storage/framework/views` and `storage/framework/cache`.
+  - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
+
+>  {warning} We have upgraded to the Bootstrap 5, it may have cache issue in browser, try to hard reload pages (Ctrl + F5 on Windows or CMD + Shift + R on MacOS).
+
 <a name="upgrade-5.21"></a>
 ## Upgrade to 5.21
 
@@ -62,7 +83,7 @@
   - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor` and `public/index.php` from the latest version.
   - Delete all files in `storage/framework/views` and `storage/framework/cache`.
   - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
-  - 
+
 <a name="upgrade-5.20"></a>
 ## Upgrade to 5.20
 

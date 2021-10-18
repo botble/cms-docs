@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.22](#version_5_22)
 - [Botble 5.21](#version_5_21)
 - [Botble 5.20](#version_5_20)
 - [Botble 5.19](#version_5_19)
@@ -49,6 +50,21 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_22"></a>
+## Botble 5.22
+### Oct 18, 2021
+- Upgrade admin theme to Bootstrap 5.
+- Add system updater. 1-click update to the latest version.
+- Add BunnyCDN cloud storage.
+- Fix bug admin email, login backgrounds.
+- Fix custom fields for blog category.
+- Update to the latest Laravel version 8.64.0
+- Improve RTL mode.
+- Improve UI & Editors.
+- Improve cookie consent (Added minimal style).
+- Improve core.
+- Optimize queries performance.
 
 <a name="version_5_21"></a>
 ## Botble 5.21

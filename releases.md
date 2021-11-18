@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.22](#version_5_23)
 - [Botble 5.22](#version_5_22)
 - [Botble 5.21](#version_5_21)
 - [Botble 5.20](#version_5_20)
@@ -50,6 +51,25 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_23"></a>
+## Botble 5.23
+### Nov 18, 2021
+- Fix UI issue with select2 fields.
+- Fix member dashboard.
+- Fix repeater field in Custom Fields plugin.
+- Fix some small issues when upgrading to Bootstrap 5.
+- Fix Admin Bar settings.
+- Improve multi-language.
+- Improve social login
+- Improve updater, using PclZip if Zip module is not enabled
+- Improve slug package.
+- Improve shortcode.
+- Improve plugin Analytics, view analytics data by date range.
+- Improve core & UI.
+- Improve RTL mode.
+- Update to the latest Laravel version 8.72.0.
+- Optimize queries performance.
 
 <a name="version_5_22"></a>
 ## Botble 5.22

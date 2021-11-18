@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 5.23](#upgrade-5.23)
 - [Upgrade To 5.22](#upgrade-5.22)
 - [Upgrade To 5.21](#upgrade-5.21)
 - [Upgrade To 5.20](#upgrade-5.20)
@@ -45,6 +46,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-5.23"></a>
+## Upgrade to 5.23
+- Option 1 (Auto update): Go to Admin -> System Administration -> System Updater and click "Download & install update".
+
+- Option 2 (Manual update):
+  - Override folder `app`, `database`, `config`, `platform`, `public/themes`, `public/vendor`, `bootstrap`, `vendor`, `composer.json`, `composer.lock` and `public/index.php` from the latest version.
+  - Go to Admin -> Platform Administration -> Cache management then clear all caches.
+  - Go to Admin -> Translations -> Other translations then click on `Import group` to update translations.
 
 <a name="upgrade-5.22"></a>
 ## Upgrade to 5.22

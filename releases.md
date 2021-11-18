@@ -1,6 +1,6 @@
 # Release Notes
 
-- [Botble 5.22](#version_5_23)
+- [Botble 5.23](#version_5_23)
 - [Botble 5.22](#version_5_22)
 - [Botble 5.21](#version_5_21)
 - [Botble 5.20](#version_5_20)
@@ -61,8 +61,8 @@
 - Fix some small issues when upgrading to Bootstrap 5.
 - Fix Admin Bar settings.
 - Improve multi-language.
-- Improve social login
-- Improve updater, using PclZip if Zip module is not enabled
+- Improve social login.
+- Improve updater, using PclZip if Zip module is not enabled.
 - Improve slug package.
 - Improve shortcode.
 - Improve plugin Analytics, view analytics data by date range.

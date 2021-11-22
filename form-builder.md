@@ -167,6 +167,44 @@ Assets::addScripts(['input-mask']);
 ### Repeater fields
 
 ```php
+
+// If your model has columns options, it will populate $model->options to repeater value.
+
+$repeaterValue = $this->model->options;
+
+// Or
+
+$repeaterValue = json_encode([
+    [
+        [
+            'key'   => 'text',
+            'value' => 'test 1',
+        ],
+        [
+            'key'   => 'image',
+            'value' => 'news/4.jpg',
+        ],
+        [
+            'key'   => 'textarea',
+            'value' => 'test 2',
+        ],
+    ],
+    [
+        [
+            'key'   => 'text',
+            'value' => 'Test 3',
+        ],
+        [
+            'key'   => 'image',
+            'value' => 'news/4.jpg',
+        ],
+        [
+            'key'   => 'textarea',
+            'value' => 'Test 4',
+        ],
+    ],
+]);
+
 ->add('options', 'repeater', [
     'label'      => __('Repeater field'),
     'label_attr' => ['class' => 'control-label'],
@@ -207,7 +245,9 @@ Assets::addScripts(['input-mask']);
                 ],
             ],
         ],
-    ]
+    ],
+    'value' => $repeaterValue,
+    // In version < 5.23, you need to use 'selected' => $repeaterValue,
 ])
 ```
 

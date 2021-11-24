@@ -53,5 +53,6 @@
   
 - Usage
   - [Setup email](usage-email.md)
+  - [Setup Amazon S3](usage-media-s3.md)
   - [Analytics](plugin-analytics.md)
     

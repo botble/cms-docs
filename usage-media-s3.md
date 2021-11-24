@@ -6,4 +6,6 @@ If you need to use S3 for storage, you can configure to use S3 in Admin -> Setti
 
 ![Image](https://live.staticflickr.com/65535/51702131810_6a1ffb1928_b.jpg)
 
-Check this video: [https://www.youtube.com/watch?v=FIvxmmgrHEs](https://www.youtube.com/watch?v=FIvxmmgrHEs)
+Check this video:
+
+[![https://www.youtube.com/watch?v=FIvxmmgrHEs](https://img.youtube.com/vi/FIvxmmgrHEs/maxresdefault.jpg)](https://www.youtube.com/watch?v=FIvxmmgrHEs)

@@ -4,6 +4,10 @@ Integrate with Google Analytics
 
 ### Getting credentials
 
+- Video tutorial:
+> {video} https://www.youtube.com/watch?v=lsx-HLJhoIc
+
+
 - Go to [https://console.developers.google.com/apis/dashboard](https://console.developers.google.com/apis/dashboard) and create a new project.
 
 ![Image](https://live.staticflickr.com/65535/51598079433_00e2dcbcb7_b.jpg)

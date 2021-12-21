@@ -58,7 +58,6 @@
 ### Dec 22, 2021
 - Fix saving meta box data.
 - Fix social login settings.
-- Fix language switcher.
 - Fix upload account's avatar.
 - Improve editor & media.
 - Improve multi-language.

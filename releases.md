@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.24](#version_5_24)
 - [Botble 5.23](#version_5_23)
 - [Botble 5.22](#version_5_22)
 - [Botble 5.21](#version_5_21)
@@ -51,6 +52,20 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_24"></a>
+## Botble 5.24
+### Dec 22, 2021
+- Fix saving meta box data.
+- Fix social login settings.
+- Fix language switcher.
+- Fix upload account's avatar.
+- Improve editor & media.
+- Improve multi-language.
+- Improve theme translations.
+- Improve RTL style.
+- Update AWS S3 settings: add AWS Endpoint.
+- Refactor code.
 
 <a name="version_5_23"></a>
 ## Botble 5.23

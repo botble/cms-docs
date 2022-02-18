@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 5.25](#version_5_25)
 - [Botble 5.24](#version_5_24)
 - [Botble 5.23](#version_5_23)
 - [Botble 5.22](#version_5_22)
@@ -53,12 +54,28 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
+<a name="version_5_25"></a>
+## Botble 5.25
+### Feb 19, 2022
+- Fix issue with Cloudflare SSL.
+- Fix tree category & social links.
+- Fix duplicate shortcode in CKEditor.
+- Fix saving SEO meta tags.
+- Improve license.
+- Improve permalink.
+- Improve dashboard widgets.
+- Improve core.
+- Prevent Method Not Allowed error when use ajax DELETE/PUT.
+- Add schema for post & page.
+- Update AWS S3 settings.
+
 <a name="version_5_24"></a>
 ## Botble 5.24
 ### Dec 22, 2021
 - Fix saving meta box data.
 - Fix social login settings.
 - Fix upload account's avatar.
+- Add Captcha in the registration page. Enable it in Admin -> Settings -> General.
 - Improve editor & media.
 - Improve multi-language.
 - Improve theme translations.

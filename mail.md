@@ -1,7 +1,6 @@
 # Mail
 
 - [Send mail](#send_mail)
-- [Email template](#email_template)
 
 <a name="send_mail"></a>
 ## Send mail

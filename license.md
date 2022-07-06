@@ -3,7 +3,7 @@
 ## Activate license
 
 Go to Admin -> Settings -> General to activate your license
-![Image](https://live.staticflickr.com/65535/51302473825_bf707472aa_b.jpg)
+![Image](https://live.staticflickr.com/65535/51714461156_24821fc934_b.jpg)
 
 If you don't know how to get purchase code, check this article: https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code
 

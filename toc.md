@@ -23,6 +23,7 @@
     - [Layouts](theme-layout.md)
     - [Error pages](theme-error-pages.md)
     - [Theme localization](theme-localization.md)
+    - [Rename theme](theme-rename.md)
     
 - Core
     - [API](api.md)
@@ -55,5 +56,6 @@
   - [Setup email](usage-email.md)
   - [Setup Amazon S3](usage-media-s3.md)
   - [Analytics](plugin-analytics.md)
+  - [Setup social login](usage-social-login.md)
   - [Reset admin password](usage-reset-admin-password.md)
     

@@ -1,5 +1,7 @@
 # Release Notes
 
+- [Botble 5.28](#version_5_28)
+- [Botble 5.27](#version_5_27)
 - [Botble 5.26](#version_5_26)
 - [Botble 5.25](#version_5_25)
 - [Botble 5.24](#version_5_24)
@@ -54,6 +56,50 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_5_28"></a>
+## Botble 5.28
+### July 13, 2022
+- Add option to download available translation files from GitHub.
+- Prevent issue when deactivating plugin Language.
+- Move folder /resources/lang to /lang.
+- Fix media URL.
+- Add permission to manage license.
+- Improve menu.
+- Improve cache system (fix cache won't be cleared after translating data).
+- Improve performance.
+- Improve menu.
+- Improve UI.
+- Improve license activation.
+- Fix theme translations.
+- Improve plugin Backup.
+- Update libraries / third-party package to the latest version.
+
+<a name="version_5_27"></a>
+## Botble 5.27
+### May 23, 2022
+- Add custom HTML shortcode.
+- Add text direction toolbar to editor.
+- Add option to add custom HTML to header, body or footer of page.
+- Add option to regenerate media thumbnails from admin panel.
+- Add memory limit & max execution time info to system information page.
+- Add option to add watermark for images in specific folders.
+- Allow to redirect all 404 requests to homepage.
+- Add DB index to some tables.
+- Handle error when activating license.
+- Fix multi-language for plugin Gallery & Custom Fields.
+- Fix image rotate issue when cropping thumbnails.
+- Fix media download on PHP 8.
+- Fix Admin RTL mode.
+- Improve contact form: add math captcha, blacklist words & domains to prevent spam mails.
+- Improve multi-language.
+  Update Ripple theme to use FontAwesome 5.
+- Improve dashboard widgets style & pagination.
+- Improve license system.
+- Improve admin bar.
+- Refactor code.
+- Update libraries.
+- Optimize queries.
 
 <a name="version_5_26"></a>
 ## Botble 5.26

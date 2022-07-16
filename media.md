@@ -67,7 +67,7 @@ You can add more file extensions if you want.
 Add to `.env`:
 
 ```bash
-RV_MEDIA_ALLOWED_MIME_TYPES=RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav,webp
+RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav,webp
 ```
 
 ## Custom upload

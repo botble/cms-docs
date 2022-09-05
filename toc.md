@@ -54,7 +54,8 @@
   
 - Usage
   - [Setup email](usage-email.md)
-  - [Setup Amazon S3](usage-media-s3.md)
+  - [Media - Setup Amazon S3](usage-media-s3.md)
+  - [Media - Setup BunnyCDN](usage-media-bunnycdn.md)
   - [Analytics](plugin-analytics.md)
   - [Setup social login](usage-social-login.md)
   - [Reset admin password](usage-reset-admin-password.md)

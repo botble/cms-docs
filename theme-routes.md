@@ -21,23 +21,4 @@ Route::group(['namespace' => 'Theme\[YourTheme]\Http\Controllers', 'middleware' 
 });
 
 Theme::routes();
-
-Route::group(['namespace' => 'Theme\[YourTheme]\Http\Controllers', 'middleware' => 'web'], function () {
-    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
-
-        Route::get('/', '[YourTheme]Controller@getIndex')->name('public.index');
-
-        Route::get('sitemap.xml', [
-            'as'   => 'public.sitemap',
-            'uses' => '[YourTheme]Controller@getSiteMap',
-        ]);
-
-        Route::get('{slug?}' . config('core.base.general.public_single_ending_url'), [
-            'as'   => 'public.single',
-            'uses' => '[YourTheme]Controller@getView',
-        ]);
-
-    });
-
-});
 ```

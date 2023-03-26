@@ -48,7 +48,7 @@ Password: `159357`
 - Theme options. Easy to change theme config from the admin panel.
 - Plugin system, able to extend features by adding plugins.
 
-- <a name="botble_team"></a>
+<a name="botble_team"></a>
 ## Botble Team
 
 Visit us at [https://botble.com](botble.com)

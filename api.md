@@ -6,7 +6,7 @@
 <a name="overview"></a>
 ## Overview
 
-API package is located in `/platform/packages`. It's using Laravel Sanctum. Learn more here: https://laravel.com/docs/10.x/sanctum
+API package is located in `/platform/packages/api`. It's using Laravel Sanctum. Learn more here: https://laravel.com/docs/10.x/sanctum
 
 <a name="generate-docs"></a>
 ## Generate API document

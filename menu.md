@@ -41,7 +41,7 @@
 
 ## Customize menu views
 
-To customize view to display menu. You can create a file in /public/themes/your-theme/partials.
+To customize view to display menu. You can create a file in `/public/themes/your-theme/partials`.
 
 Ex: `/platform/themes/your-theme/partials/custom-menu.blade.php`
 ```php

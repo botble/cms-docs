@@ -54,8 +54,7 @@ php artisan cms:media:thumbnail:generate
 How to use:
 
 ```php
-{{ get_image_url($post->image, 'post-small') }}
-{{ get_object_image($post->image, 'post-small') }}
+{{ RvMedia::getImageUrl($post->image, 'post-small') }}
 ```
 
 ## Add more file extensions.
@@ -80,20 +79,14 @@ Ex:
 \RvMedia::handleUpload(request()->file('file'), 0, 'your-folder');
 ```
 
-Or
-
-```
-rv_media_handle_upload(request()->file('file'), 0, 'your-folder');
-```
-
 ## Get image by size
 
-To get image by size, you can use `get_image_url($url, $size = null, $relative_path = false, $default = null)`.
+To get image by size, you can use `RvMedia::getImageUrl($url, $size = null, $relative_path = false, $default = null)`.
 
 Ex:
 
 ```
-get_image_url($post->image, 'thumb');
+RvMedia::getImageUrl($post->image, 'thumb');
 ```
 
 If you have registered other size, you can change `thumb` by your size's name.

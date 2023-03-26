@@ -323,11 +323,6 @@ add_filter(BASE_FILTER_BEFORE_RENDER_FORM, function ($form, $data)
 add_action(BASE_ACTION_AFTER_CREATE_CONTENT, 'save_addition_fields', 120, 3);
 add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_fields', 120, 3);
 
-/**
- * @param string $screen
- * @param Request $request
- * @param Model $data
- */
 function save_addition_fields($screen, $request, $data)
 {
     if (get_class($data) == \Botble\Blog\Models\Post::class) {

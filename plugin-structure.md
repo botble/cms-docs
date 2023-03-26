@@ -1,7 +1,7 @@
 # Plugin Structure
 
 All plugins are registered to Composer autoloader manually. It needs a `plugin.json` file to provide all needed information
-for auto loading.
+for auto-loading.
 
 ![Image](https://botble.com/storage/uploads/1/docs/plugin-structure.jpg)
 
@@ -18,8 +18,8 @@ Example:
     "name": "Demo",
     "namespace": "Botble\\Demo\\",
     "provider": "Botble\\Demo\\Providers\\DemoServiceProvider",
-    "author": "Sang Nguyen",
-    "url": "https://sangnguyen.info",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
     "version": "1.0",
     "description": "The description for plugin demo"
 }
@@ -38,23 +38,14 @@ use Botble\Base\Interfaces\PluginInterface;
 class Plugin implements PluginInterface
 {
 
-    /**
-     * @author Sang Nguyen
-     */
     public static function activate()
     {
     }
 
-    /**
-     * @author Sang Nguyen
-     */
     public static function deactivate()
     {
     }
 
-    /**
-     * @author Sang Nguyen
-     */
     public static function remove()
     {
         Schema::dropIfExists('demos'); // Remove table demo when removing plugin "demo"
@@ -99,17 +90,11 @@ Example:
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateDemoTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
+return new class () extends Migration {
+    public function up(): void
     {
         Schema::create('demos', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name', 120);
             $table->tinyInteger('status')->unsigned()->default(1);
 
@@ -118,16 +103,11 @@ class CreateDemoTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('demos');
     }
-}
+};
 ```
 
 - `helpers/constants.php`: to define all PHP constants for this plugin. It must have a constant for its screen name.
@@ -157,49 +137,22 @@ return [
 Example:
 
 ```php
-Route::group(['namespace' => 'Botble\Demo\Http\Controllers', 'middleware' => 'web'], function () {
+<?php
 
-    Route::group(['prefix' => config('core.base.general.admin_dir'), 'middleware' => 'auth'], function () {
-        Route::group(['prefix' => 'demos'], function () {
+Route::group(['namespace' => 'Botble\Demo\Http\Controllers', 'middleware' => ['web', 'core']], function () {
 
-            Route::get('/', [
-                'as' => 'demo.list',
-                'uses' => 'DemoController@getList',
-            ]);
+    Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
 
-            Route::get('/create', [
-                'as' => 'demo.create',
-                'uses' => 'DemoController@getCreate',
-            ]);
-
-            Route::post('/create', [
-                'as' => 'demo.create',
-                'uses' => 'DemoController@postCreate',
-            ]);
-
-            Route::get('/edit/{id}', [
-                'as' => 'demo.edit',
-                'uses' => 'DemoController@getEdit',
-            ]);
-
-            Route::post('/edit/{id}', [
-                'as' => 'demo.edit',
-                'uses' => 'DemoController@postEdit',
-            ]);
-
-            Route::get('/delete/{id}', [
-                'as' => 'demo.delete',
-                'uses' => 'DemoController@getDelete',
-            ]);
-
-            Route::post('/delete-many', [
-                'as' => 'demo.delete.many',
-                'uses' => 'DemoController@postDeleteMany',
-                'permission' => 'demo.delete',
+        Route::group(['prefix' => 'demos', 'as' => 'demo.'], function () {
+            Route::resource('', 'DemoController')->parameters(['' => 'demo']);
+            Route::delete('items/destroy', [
+                'as' => 'deletes',
+                'uses' => 'DemoController@deletes',
+                'permission' => 'demo.destroy',
             ]);
         });
     });
-    
+
 });
 ```
 
@@ -218,24 +171,17 @@ Example:
 ```php
 public function register()
 {
-    if (setting('enable_cache', false)) { // Check if cache is enabled or disabled.
-        // Binding repositories if cache is enabled.
-        $this->app->singleton(DemoInterface::class, function () {
-            return new DemoCacheDecorator(new DemoRepository(new Demo()), new Cache($this->app['cache'], DemoRepository::class));
-        });
-    } else {
-        // Binding repositories if cache is disabled.
-        $this->app->singleton(DemoInterface::class, function () {
-            return new DemoRepository(new Demo());
-        });
-    }
+    // Binding repositories if cache is disabled.
+    $this->app->singleton(DemoInterface::class, function () {
+        return new DemoRepository(new Demo());
+    });
 
     Helper::autoload(__DIR__ . '/../../helpers'); // Load all constants/helpers from helpers folder.
 }
 
 public function boot()
 {
-    $this->setIsInConsole($this->app->runningInConsole())
+    $this
         ->setNamespace('plugins/demo') // Set namespace of a plugin, it's used for views/lang. Example: view('plugins.demo::create'), trans('plugins.demo::demo.create')
         ->loadAndPublishConfigurations(['permissions']) // Load configuration from config folder.
         ->loadAndPublishViews()
@@ -243,7 +189,7 @@ public function boot()
         ->loadRoutes(); // Load route. It's equal ->loadRoutes(['web']), if you need to work on API, you can add "api" to load it.
 
     // Register plugin menu to admin menu
-    Event::listen(SessionStarted::class, function () {
+    Event::listen(RouteMatched::class, function () {
         dashboard_menu()->registerItem([
             'id' => 'cms-plugins-demo', // Id of menu. It must be unique
             'priority' => 5, // Position of plugin
@@ -251,7 +197,7 @@ public function boot()
             'name' => trans('plugins.demo::demo.name'),
             'icon' => 'fa fa-list',
             'url' => route('demo.list'),
-            'permissions' => ['demo.list'], // Permission key, it's defined in /config/permisisons.php
+            'permissions' => ['demo.list'], // Permission key, it's defined in /config/permissions.php
         ]);
     });
 }

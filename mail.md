@@ -12,5 +12,5 @@ EmailHandler::send(string $content, string $title, $to = null, $args = [], $debu
 Ex:
 
 ```php
-EmailHandler::send('Hello there', 'Test email', 'sangit7b@gmail.com');
+EmailHandler::send('Hello there', 'Test email', 'contact@botble.com');
 ```

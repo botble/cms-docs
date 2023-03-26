@@ -1,6 +1,6 @@
 # Meta boxes
 
-This concept based on Wordpress functions.
+This concept based on WordPress functions.
 
 You can add meta box from `your-theme/functions/functions.php` or in function `boot` of your plugin service provider.
 

@@ -11,12 +11,7 @@
 It will use template `plugins/gallery/resources/views/gallery.blade.php` to render gallery
 
 ```php
-/**
- * @param $limit
- * @return mixed
- * @author Sang Nguyen
- */
-function render_galleries($limit)
+function render_galleries(int $limit)
 {
     Gallery::registerAssets();
     return view('plugins.gallery::gallery', compact('limit'));

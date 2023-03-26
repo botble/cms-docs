@@ -2,9 +2,9 @@
 
 ## How to add new language to admin panel?
 
-- Add your language in /resources/lang directory, copy all files /resources/lang/en and paste to your language folder and translate it to your language.
+- Add your language in Admin -> Locales and go to Admin -> Translations -> Other translations to translate admin panel to your language.
 
-- You can use Laravel language https://github.com/caouecs/Laravel-lang/tree/master/src to quick translate.
+- Set default language for admin panel in Admin -> Settings -> General.
 
 ## How to add new post format
 
@@ -95,15 +95,3 @@ Add to `/platform/themes/your-theme/functions/functions.php`
     }
 });
 ```
-
-## How to add new language for admin panel?
-
-Run command `php artisan cms:locale:create <locale>`
-
-Ex: `php artisan cms:locale:create fr` then open folder `resources/lang/fr` to translate it to French.
-
-## How to remove a language for admin panel?
-
-Run command `php artisan cms:locale:remove <locale>`
-
-Ex: `php artisan cms:locale:remove zh-CN`

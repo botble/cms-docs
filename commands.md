@@ -43,7 +43,7 @@ By default, CMS assets is located in `/platform` so to make it accessible we hav
 To do that, we need to run command:
 
 ```
-php artisan vendor:publish --tag=cms-public --force
+php artisan cms:publish:assets
 ```
 
 Ex: 

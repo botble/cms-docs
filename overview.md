@@ -1,4 +1,4 @@
-s# Overview
+# Overview
 
 - [Introduction](#introduction)
 - [Demo](#demo)

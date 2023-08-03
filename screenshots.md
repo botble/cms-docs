@@ -1,50 +1,50 @@
 # Screenshots
 
-### 1/ Dashboard
+## Dashboard
 Dashboard with Google Analytics, recent posts, error logs...
 
 ![Dashboard](https://botble.com/storage/uploads/1/docs/screenshots/dashboard.png)
 
-### 2/ CRUD
+## CRUD
 
 ![Edit Page](https://botble.com/storage/uploads/1/docs/screenshots/edit-page.png)
 
-### 3/ Theme
+## Theme
 2 themes already now.
 
 ![Theme](https://botble.com/storage/uploads/1/docs/screenshots/theme.png)
 
-### 4/ Menu
+## Menu
 
 ![Menu](https://botble.com/storage/uploads/1/docs/screenshots/menu.png)
 
 
-### 5/ Widget
+## Widget
 This widget likes with WordPress widget.
 
 ![Widget](https://botble.com/storage/uploads/1/docs/screenshots/widget.png)
 
-### 6/ Theme options
+## Theme options
 
 ![Theme options](https://botble.com/storage/uploads/1/docs/screenshots/theme-option.png)
 
-### 7/ Gallery
+## Gallery
 
 ![Gallery](https://botble.com/storage/uploads/1/docs/screenshots/gallery.png)
 
-### 8/ Media
+## Media
 
 ![Media](https://botble.com/storage/uploads/1/docs/screenshots/media.png)
 
-### 9/ Plugins
+## Plugins
 There are many plugins for you now.
 
 ![Plugins](https://botble.com/storage/uploads/1/docs/screenshots/plugin.png)
 
-### 10/ Roles & Permissions
+## Roles & Permissions
 
 ![Roles & Permissions](https://botble.com/storage/uploads/1/docs/screenshots/role-permission.png)
 
-### 11/ Other features
+## Other features
 
 ![Features](https://botble.com/storage/uploads/1/docs/screenshots/other.png)

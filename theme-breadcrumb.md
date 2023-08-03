@@ -1,8 +1,5 @@
 # Breadcrumb
 
-- [Breadcrumbs](#breadcrumbs)
-
-<a name="breadcrumbs"></a>
 ## Breadcrumbs
 In order to use breadcrumbs, follow the instruction below:
     

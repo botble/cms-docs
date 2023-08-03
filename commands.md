@@ -1,19 +1,7 @@
 # Commands
 
-- [CMS Install](#install)
-- [Create admin user](#create-admin-user)
-- [Publish assets](#publish-assets)
-- [Create a package](#create-package)
-- [Create a plugin](#create-plugin)
-- [Activate a plugin](#activate-plugin)
-- [Deactivate a plugin](#deactivate-plugin)
-- [Remove a plugin](#remove-plugin)
-- [Theme commands](#theme-commands)
-- [Widget commands](#widget-commands)
-    
 List of commands are used in Botble CMS
 
-<a name="install"></a>
 ## CMS Install
 It's used to install CMS.
 
@@ -25,7 +13,6 @@ Ex:
 
 ![Install CMS](./images/install-command.png)
 
-<a name="create-admin-user"></a>
 ## Create admin user
 It's used to create an admin user.
 ```
@@ -50,7 +37,6 @@ Ex:
 
 ![Publish assets](./images/publish-assets.png)
 
-<a name="create-package"></a>
 ## Create a package
 It's used to create a package. The package created will be located in `/platform/packages`
 
@@ -64,7 +50,6 @@ Ex:
 
 Package isn't loaded after created. You need to add it into composer.json and run `composer update` to add it.
 
-<a name="create-plugin"></a>
 ## Create a plugin
 It's used to create a plugin. The plugin created will be located in `/platform/plugins`
 
@@ -76,7 +61,6 @@ Ex:
 
 ![Create plugin](./images/create-plugin.png)
 
-<a name="activate-plugin"></a>
 ## Activate a plugin
 Activate an existed plugin.
 
@@ -90,7 +74,6 @@ Ex:
 
 That command will add that plugin into list activated plugin in table `settings`, run migrate to update database and clear cache.
 
-<a name="deactivate-plugin"></a>
 ## Deactivate a plugin
 Deactivate an existed plugin.
 
@@ -104,7 +87,6 @@ Ex:
 
 That command will remove that plugin from list activated plugin in table `settings` so that plugin won't be loaded and clear cache.
 
-<a name="remove-plugin"></a>
 ## Remove a plugin
 Remove an existed plugin.
 
@@ -118,7 +100,6 @@ Ex:
 
 That command will deactivate plugin, remove that plugin's assets, tables...
 
-<a name="theme-commands"></a>
 ## Theme commands
 
 - Create a theme. It's used to create a front theme for Botble CMS. The theme created will be located in `/platform/themes`
@@ -166,7 +147,6 @@ Source code:
 
 ![Theme install sample data](./images/theme-install-sample-data.png)
 
-<a name="widget-commands"></a>
 ## Widget commands
 A widget must be go with a theme so that it always located in a theme.
 

@@ -1,22 +1,24 @@
 # Theme MVC Pattern
 
- - [Theme structure](#theme_structure)
- 
-<a name="theme_structure"></a>
 ## Theme structure
 
-You can start working develop theme base on default theme `ripple` or using starter theme by command:
-    
+When developing a theme, you can start by using the default theme called **ripple** or create a new theme using a
+starter theme with the following command:
+
 ```bash
 php artisan cms:theme:create <your theme name>
 ```
- 
-Then you can see MVC pattern in your theme:
 
-\- Models: `/platform/themes/<your theme>/src/Models`
+Then you can see an MVC pattern in your theme:
 
-You can create folder `platform/themes/<your theme>/src/Models` and put all models you need here. Namespace for it will be `Theme\Ripple\Models`.
-> {note} `Theme\Ripple` is the namespace which autoload in `platform/themes/<your theme>/composer.json`
+- Models: `/platform/themes/<your theme>/src/Models`
+
+You can create folder `platform/themes/<your theme>/src/Models` and put all models you need here. Namespace for it will
+be `Theme\Ripple\Models`.
+
+::: tip
+`Theme\Ripple` is the namespace which autoload in `platform/themes/<your theme>/composer.json`
+:::
 
 Ex: `platform/themes/<your theme>/src/Models/Post.php`
 
@@ -31,12 +33,13 @@ class Post extends Eloquent
 }
 ```
 
-\- View: `/platform/themes/<your theme>/views`
+- View: `/platform/themes/<your theme>/views`
 
 Views will be in `platform/themes/<your theme>/views`.
 
-\- Controllers: `/platform/themes/<your theme>/src/Http/Controllers`
+- Controllers: `/platform/themes/<your theme>/src/Http/Controllers`
 
-You can create folder `platform/themes/<your theme>/src/Http/Controllers` and put all controllers you need here. Namespace for it will be `Theme\Ripple\Http\Controllers`.
+You can create folder `platform/themes/<your theme>/src/Http/Controllers` and put all controllers you need here.
+Namespace for it will be `Theme\Ripple\Http\Controllers`.
 
-\- Routes: ``/platform/themes/<your theme>/routes`    
+- Routes: `/platform/themes/<your theme>/routes`.

@@ -15,7 +15,7 @@ if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
 
 Add to your theme views.
 
-```
+```blade
 {!! apply_filters('language_switcher') !!}
 ```
 
@@ -26,7 +26,7 @@ If you want to custom language switcher, you can modify this file: `platform/plu
 If you have a fixed number of languages you can use hardcode HTML like this.
 Note: Language settings in admin won't work if you use this code.
 
-```
+```blade
 <ul>
     <li>
         <a rel="alternate" hreflang="en" href="{{ Language::getLocalizedURL('en') }}">
@@ -41,5 +41,4 @@ Note: Language settings in admin won't work if you use this code.
         </a>
     </li>
 </ul>
-        
 ```

@@ -2,15 +2,16 @@
 
 - [Customize 404 page](#customize-404-page)
 
-<a name="customize-404-page"></a>
 ## Customize 404 page
 
 Default 404 page for theme is located in `/platform/themes/your-theme/views/404.blade.php`.
 To customize error layout, you need to change in `/platform/themes/your-theme/views/error-master.blade.php`
 
-> {note} Please use below code if you want to use theme layout for error pages.
+::: tip
+Please use below code if you want to use theme layout for error pages.
+:::
 
-```html
+```blade
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -43,7 +44,7 @@ To customize error layout, you need to change in `/platform/themes/your-theme/vi
 
 Example for `/platform/themes/your-theme/views/404.blade.php`:
 
-```html
+```blade
 @extends('theme.' . setting('theme') . '::views.error-master')
 
 @php
@@ -67,6 +68,4 @@ Example for `/platform/themes/your-theme/views/404.blade.php`:
     <br>
     <br>
 @endsection
-
 ```
-

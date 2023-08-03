@@ -1,8 +1,5 @@
 # Theme options
 
-- [Basic usage](#basic-usage)
-
-<a name="basic-usage"></a>
 ## Basic usage of theme options
 
 Adding theme options fields.

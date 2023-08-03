@@ -5,7 +5,7 @@ Integrate with Google Analytics
 ### Getting credentials
 
 - Video tutorial:
-> {video} https://www.youtube.com/watch?v=lsx-HLJhoIc
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lsx-HLJhoIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 - Go to [https://console.developers.google.com/apis/dashboard](https://console.developers.google.com/apis/dashboard) and create a new project.
@@ -48,7 +48,9 @@ It will look like this:
 
 - Go to Google Analytics account: https://analytics.google.com/analytics/web/. Click on "Admin" => "View Settings" and copy "View ID" number, then go to /admin/settings/general and tab "Google Analytics" and paste to field View ID.
 
-> {warning} Note: Change in Google Analytics 4 property.
+::: warning
+Note: Change in Google Analytics 4 property.
+:::
 
 When creating a new property, you need to check the "Create a Universal Analytics Property" checkbox.
 
@@ -73,7 +75,9 @@ Then you will have view settings tab and **View ID**.
 - Go to Admin -> Platform Administration -> Cache management and clear your site cache.
   ![Image](https://live.staticflickr.com/65535/51597041387_1a8c28a485_b.jpg)
 
-> {warning} Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from API, not realtime analytics so please wait until your site has data from API.
+::: warning
+Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from API, not realtime analytics so please wait until your site has data from API.
+:::
 
 Give your comment here if you got any problem.
 

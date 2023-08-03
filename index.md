@@ -1,11 +1,5 @@
 # Overview
 
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Why choose us](#why_choose_us)
-- [Botble Team](#botble_team)
-
-<a name="introduction"></a>
 ## Introduction
 
 PHP platform based on Laravel Framework 9.x
@@ -18,8 +12,7 @@ Email: [contact@botble.com](mailto:contact@botble.com)
 
 Thank you for purchasing this CMS. If you have any questions that are beyond the scope of this help file, 
 please feel free to email via my user page contact form [here](https://codecanyon.net/user/botble) for quickly support. Thank you so much!
-		
-<a name="demo"></a>
+
 ## Demo
 
 Homepage: [https://cms.botble.com](https://cms.botble.com)
@@ -30,7 +23,6 @@ Username: `botble`
 
 Password: `159357`
 
-<a name="why_choose_us"></a>
 ## Why choose us
 
 - Coding Standard: All code follow coding standards PSR-12 and best practices.
@@ -48,7 +40,6 @@ Password: `159357`
 - Theme options. Easy to change theme config from the admin panel.
 - Plugin system, able to extend features by adding plugins.
 
-<a name="botble_team"></a>
 ## Botble Team
 
 Visit us at [https://botble.com](botble.com)

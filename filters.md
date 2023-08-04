@@ -1,15 +1,7 @@
 # Filters
 
-- [add_filter()](#add_filter)
-    - [Description](#add_filter_description)
-    - [Parameters](#add_filter_parameters)
-- [apply_filters()](#apply_filters)
-    - [Description](#apply_filter_description)
-    - [Parameters](#apply_filter_parameters)
-    
 This concept is based on Wordpress hook functions.
 
-<a name="add_filter"></a>
 ## add_filter()
 
 ** Reference: https://developer.wordpress.org/reference/functions/add_filter **
@@ -19,13 +11,13 @@ Function: Hook a function or method to a specific filter action.
 ```php
 add_filter(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1)
 ```
-    
-<a name="add_filter_description"></a>
+
 ### Description
 
 Botble offers filter hooks to allow plugins to modify various types of internal data at runtime.
 
-A plugin can modify data by binding a callback to a filter hook. When the filter is later applied, each bound callback is run in order of priority, and given the opportunity to modify a value by returning a new value.
+A plugin can modify data by binding a callback to a filter hook. When the filter is later applied, each bound callback
+is run in order of priority, and given the opportunity to modify a value by returning a new value.
 
 The following example shows how a callback function is bound to a filter hook.
 
@@ -38,7 +30,7 @@ function example_callback( $example ) {
 }
 add_filter( 'example_filter', 'example_callback' );
 ```
-    
+
 Bound callbacks can accept from none to the total number of arguments passed as parameters
 in the corresponding `apply_filters()` call.
 
@@ -66,26 +58,30 @@ function example_callback( $value, $arg2 ) {
 }
 add_filter( 'hook', 'example_callback', 10, 2 ); // Where $priority is 10, $accepted_args is 2.
 ```
-    
-> {note} The function will return true whether or not the callback is valid. It is up to you to take care. 
-This is done for optimization purposes, so everything is as quick as possible.
 
-<a name="add_filter_parameters"></a>
+::: tip
+The function will return true whether or not the callback is valid. It is up to you to take care.
+This is done for optimization purposes, so everything is as quick as possible.
+:::
+
 ### Parameters
 
 **$tag**: (string) (Required) The name of the filter to hook the $function_to_add callback to.
 
 **$function_to_add**: (callable) (Required) The callback to be run when the filter is applied.
 
-**$priority**: 
-- (int) (Optional) Used to specify the order in which the functions associated with a particular action are executed. Lower numbers correspond with earlier execution, and functions with the same priority are executed in the order in which they were added to the action. 
+**$priority**:
+
+- (int) (Optional) Used to specify the order in which the functions associated with a particular action are executed.
+  Lower numbers correspond with earlier execution, and functions with the same priority are executed in the order in
+  which they were added to the action.
 - Default value: 10
 
-**$accepted_args**: 
+**$accepted_args**:
+
 - (int) (Optional) The number of arguments the function accepts.
 - Default value: 1
 
-<a name="apply_filters"></a>
 ## apply_filters()
 
 ** Reference: https://developer.wordpress.org/reference/functions/apply_filters **
@@ -95,11 +91,12 @@ Function: Call the functions added to a filter hook.
 ```php
 apply_filters(string $tag, mixed $value)
 ```
-    
-<a name="add_filter_description"></a>
+
 ### Description
 
-The callback functions attached to filter hook $tag are invoked by calling this function. This function can be used to create a new filter hook by simply calling this function with the name of the new hook specified using the $tag parameter.
+The callback functions attached to filter hook $tag are invoked by calling this function. This function can be used to
+create a new filter hook by simply calling this function with the name of the new hook specified using the $tag
+parameter.
 
 The function allows for additional arguments to be added and passed to hooks.
 
@@ -120,14 +117,16 @@ add_filter( 'example_filter', 'example_callback', 10, 3 );
 $value = apply_filters( 'example_filter', 'filter me', $arg1, $arg2 );
 ```
 
-<a name="apply_filters_parameters"></a>
 ### Parameters
 
 **$tag**:
+
 - (string) (Required) The name of the filter hook.
 
 **$value**:
+
 - (mixed) (Required) The value on which the filters hooked to $tag are applied on.
 
 **$var,...**:
+
 - (mixed) (Required) Additional variables passed to the functions hooked to $tag.

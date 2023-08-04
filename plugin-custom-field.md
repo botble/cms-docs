@@ -4,15 +4,19 @@
 
 Use the Custom Fields plugin to take full control of your Botble edit screens & custom field data.
 
-Add fields on demand. Our field builder allows you to quickly and easily add fields to edit screens with only the click of a few buttons!
+Add fields on demand. Our field builder allows you to quickly and easily add fields to edit screens with only the click
+of a few buttons!
 
 Fields can be added all over including posts, pages, categories, tags!
 
-Show them everywhere. Load and display your custom field values in views file post.blade.php, page.blade.php, tag.blade.php, category.blade.php of your theme (/public/themes/<your theme>/views) with our hassle free developer friendly functions!
+Show them everywhere. Load and display your custom field values in views file post.blade.php, page.blade.php,
+tag.blade.php, category.blade.php of your theme (`/public/themes/views`) with our hassle free developer friendly
+functions!
 
 ## How to use Custom Fields plugin
 
 #### Active this plugin
+
 Go through to **Admin Dashboard** --> **Plugins** --> Activate this plugin.
 Currently, this plugin support **Pages** and **Blog**.
 
@@ -21,11 +25,13 @@ Currently, this plugin support **Pages** and **Blog**.
 Check video tutorial: https://www.youtube.com/watch?v=aju8b1MhWbE
 
 **get_field**: get a custom field from a model
+
 ```php
 get_field($data, $alias = null, $default = null)
 ```
 
 Example:
+
 ```php
 $page = \Botble\Page\Models\Page::find(1);
 $field = get_field($page, 'foo');
@@ -44,11 +50,13 @@ If you display field in platform/themes/[your-theme]/views/post.blade.php:
 ````
 
 **has_field**: determine a model has custom field or not
+
 ```php
 function has_field($id, $screenName, $alias = null)
 ```
 
 Example:
+
 ```php
 $page = \Botble\Page\Models\Page::find(1);
 $hasField = has_field($page, 'foo');
@@ -61,6 +69,7 @@ get_sub_field(array $parentField, $alias, $default = null)
 ```
 
 Example:
+
 ```php
 $page = \Botble\Page\Models\Page::find(1);
 foreach(get_field($page, 'foo_repeater') as $item) {
@@ -75,6 +84,7 @@ has_sub_field(array $parentField, $alias)
 ```
 
 Example:
+
 ```php
 $page = \Botble\Page\Models\Page::find(1);
 foreach(get_field($page, 'foo_repeater') as $item) {
@@ -119,5 +129,6 @@ $this->app->booted(function () {
 ```
 
 ## Video tutorials
+
 - Working with Custom Fields plugin: https://www.youtube.com/watch?v=aju8b1MhWbE
 - Generate FAQ rich snippet using Custom Fields: https://www.youtube.com/watch?v=mEMOy3BMnYI

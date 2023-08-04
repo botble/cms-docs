@@ -1,4 +1,4 @@
-# Media - Setup BunnyCDN    
+# Media - Setup BunnyCDN
 
 ## Instruction
 
@@ -8,4 +8,4 @@ If you need to use BunnyCDN for storage, you can configure to use BunnyCDN in Ad
 
 ## Video Tutorial
 
-> {video} https://www.youtube.com/watch?v=Hlw4erp2DGk
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hlw4erp2DGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

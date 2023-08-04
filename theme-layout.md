@@ -1,9 +1,12 @@
 # Layouts
 
 ### Create new layout
-Create a layout file in `/platform/themes/<current theme>/layouts` following `default.blade.php` in this folder. Then customize it like you want.
+
+Create a layout file in `/platform/themes/<current theme>/layouts` following `default.blade.php` in this folder. Then
+customize it like you want.
 
 Example: `custom-layout.blade.php`
+
 ```php
 {!! Theme::partial('header') !!}
 {!! Theme::content() !!}
@@ -11,6 +14,7 @@ Example: `custom-layout.blade.php`
 ```
 
 ### Using layout for pages
+
 *Step 1:* Register new template to `/platform/themes/<current theme>/functions/functions.php`
 
 ```php
@@ -34,22 +38,22 @@ public function getExample()
 
 ### Using $page in layouts
 
-You can send $page variable from /platform/themes/views/page.blade.php to /platform/themes/layouts/default.blade.php using:
+You can send $page variable from `/platform/themes/views/page.blade.php` to `/platform/themes/layouts/default.blade.php`
+using:
 
-
-```php
+```blade
 // Add on the top of platform/themes/views/page.blade.php
 
 @php
-Theme::set('page', $page);
+    Theme::set('page', $page);
 @endphp
 ```
 
-```php
+```blade
 // Add on the top of platform/themes/layouts/default.blade.php
 
 @php
-$page = Theme::get('page');
+    $page = Theme::get('page');
 @endphp
 ```
 

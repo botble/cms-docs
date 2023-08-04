@@ -1,17 +1,9 @@
 # Theme
 
-- [Create theme with artisan CLI](#command_generate)
-- [Configuration](#configuration)
-- [Basic usage](#basic-usage)
-- [Partials](#partials)
-- [Working with regions](#working-with-regions)
-- [Preparing data to view](#preparing-data-to-view)
-- [Using theme global](#using-theme-global)
-
-> {warning} Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
-
-<a name="command_generate"></a>
-## Create theme with artisan CLI
+::: warning
+Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to
+reinstall it, then you can use dev commands.
+:::
 
 The first time you have to create theme "demo" structure, using the artisan command:
 
@@ -19,17 +11,17 @@ The first time you have to create theme "demo" structure, using the artisan comm
 php artisan cms:theme:create demo
 ```
 
-
 To delete an existing theme, use the command:
 
 ```bash
 php artisan cms:theme:remove demo
 ```
 
-<a name="configuration"></a>
 ##Configuration
 
-> {info} The main config for theme is located in /platform/themes/[theme]/config.php
+::: info
+The main config for theme is located in /platform/themes/[theme]/config.php
+:::
 
 The config is convenient for setting up basic CSS/JS, partial composer, breadcrumb template and also metas.
 
@@ -76,8 +68,7 @@ Example:
     )
 ]
 ```
-    
-<a name="basic-usage"></a>
+
 ## Basic usage
 
 ```php
@@ -102,7 +93,9 @@ class HomeController extends Controller {
 }
 ```
 
-> {info} Get only content "$theme->of('home.index')->content();".
+::: info
+Get only content "$theme->of('home.index')->content();".
+:::
 
 To find the location of a view.
 
@@ -116,7 +109,6 @@ $which = $theme->scope('home.index')->location(true);
 echo $which; // ./platform/themes/name/views/home/index.blade.php
 ```
 
-<a name="partials"></a>
 ### Partials
 
 Render a partial in your layouts or views.
@@ -149,7 +141,6 @@ $theme->partialComposer('header', function($view) {
 }, 'layout-name');
 ```
 
-<a name="working-with-regions"></a>
 ## Working with regions.
 
 Theme has magic methods to set, prepend and append anything.
@@ -216,10 +207,10 @@ Theme::getContentArgument('name');
 Theme::hasContentArgument('name');
 ```
 
+::: info
+Theme::place('content') is a reserve region to render sub-view.
+:::
 
-> {info} Theme::place('content') is a reserve region to render sub-view.
-
-<a name="preparing-data-to-view"></a>
 ## Preparing data to view
 
 Sometimes you don't need to execute heavy processing, so you can prepare and use when you need it.
@@ -236,7 +227,6 @@ Using bound data on view.
 echo Theme::bind('something');
 ```
 
-<a name="using-theme-global"></a>
 ## Using theme global
 
 ```php
@@ -271,6 +261,7 @@ public function getIndex()
 ```
 
 ## Rename the theme to the new name
+
 ### Using command line:
 
 ```bash
@@ -281,5 +272,6 @@ php artisan cms:theme:rename [current-name] [new-name]
 
 - Rename folder `platform/themes/[current-theme-name]` to `platform/themes/[new-name]`.
 - Rename folder `public/themes/[current-theme-name]` `to public/themes/[new-name]`.
-- Open table `settings` and replace all key `theme-[current-theme-name]` to `theme-[new-name]`, change setting theme to `[new-name]`.
+- Open table `settings` and replace all key `theme-[current-theme-name]` to `theme-[new-name]`, change setting theme
+  to `[new-name]`.
 - Open table `widgets` and replace all values in `theme` column to the new name `[new-name]`.

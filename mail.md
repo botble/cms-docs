@@ -2,7 +2,6 @@
 
 - [Send mail](#send_mail)
 
-<a name="send_mail"></a>
 ## Send mail
 
 ```php

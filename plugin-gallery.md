@@ -2,7 +2,7 @@
 
 ## Display galleries in theme
 
-```php
+```blade
 @if (function_exists('render_galleries'))
    {!! render_galleries(8) !!}
 @endif
@@ -18,13 +18,14 @@ function render_galleries(int $limit)
 }
 ```
 
-If you need to custom display of list galleries, you just need to copy the content of `plugins/gallery/resources/views/gallery.blade.php` and customize it in your theme.
+If you need to custom display of list galleries, you just need to copy the content
+of `plugins/gallery/resources/views/gallery.blade.php` and customize it in your theme.
 
 ## Display galleries for page, post
 
 For page: Add in your-theme/page.blade.php
 
-```php
+```blade
 @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($page)))
   {!! render_object_gallery($galleries) !!}
 @endif
@@ -32,7 +33,7 @@ For page: Add in your-theme/page.blade.php
 
 For post: Add in your-theme/post.blade.php
 
-```php
+```blade
 @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($post)))
     {!! render_object_gallery($galleries, ($post->categories()->first() ? $post->categories()->first()->name : __('Uncategorized'))) !!}
 @endif

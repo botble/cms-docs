@@ -1,11 +1,9 @@
 # Breadcrumb
 
-- [Breadcrumbs](#breadcrumbs)
-
-<a name="breadcrumbs"></a>
 ## Breadcrumbs
+
 In order to use breadcrumbs, follow the instruction below:
-    
+
 ```php
 Theme::breadcrumb()->add('label', 'http://...')->add('label2', 'http:...');
     
@@ -22,16 +20,16 @@ Theme::breadcrumb()->add([
     ]
 ]);
 ```
-    
+
 To render breadcrumbs.
 
 ```php
 {!! Theme::breadcrumb()->render() !!}
 ```
-    
+
 To customize breadcrumb, using below code instead of `{!! Theme::breadcrumb()->render() !!}`:
 
-```php
+```blade
 <ul class="breadcrumb">
     @foreach (Theme::breadcrumb()->getCrumbs() as $i => $crumb)
         @if ($i != (count(Theme::breadcrumb()->getCrumbs()) - 1))
@@ -43,8 +41,9 @@ To customize breadcrumb, using below code instead of `{!! Theme::breadcrumb()->r
 </ul>
 ```
 
-If you're using breadcrumbs in many files, you can put above code in `platform/themes/your-theme/partials/breadcrumbs.blade.php` then use
+If you're using breadcrumbs in many files, you can put above code
+in `platform/themes/your-theme/partials/breadcrumbs.blade.php` then use
 
-```php
+```blade
 {!! Theme::partial('breadcrumbs') !!}
 ```

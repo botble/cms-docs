@@ -1,10 +1,11 @@
 # Dashboard
 
-## Stats widget (https://prnt.sc/tlmdtc)
+## Stats widget
 
 ### Add a new stats widget
 
-- Open your plugin service provider then add to the `boot` function or `platform/themes/[your-theme]/functions/functions.php`
+- Open your plugin service provider then add to the `boot` function
+  or `platform/themes/[your-theme]/functions/functions.php`
 
 ```php
 add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
@@ -23,31 +24,37 @@ add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
 
 `1221` is the priority, it can be any number but must unique.
 
-> {warning} You can find an example in platform/packages/page/src/Providers/HookServiceProvider.php line 57
+::: warning
+You can find an example in `platform/packages/page/src/Providers/HookServiceProvider.php` line 57.
+:::
 
 ### Remove a stats widget by ID
 
 ```php
 add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets) {
     \Illuminate\Support\Arr::forget($widgets, '[Widget ID]');
+
     return $widgets;
 }, 120, 1);
 ```
 
-- [Widget ID] is ID of widget. Ex: `widget_total_plugins`. You can use `dd($widgets)` to find widget ID.
+- `[Widget ID]` is ID of widget. Ex: `widget_total_plugins`. You can use `dd($widgets)` to find widget ID.
 
 ### Remove all stats widgets
 
-- Open your plugin service provider then add to the `boot` function or `platform/themes/[your-theme]/functions/functions.php`
+- Open your plugin service provider then add to the `boot` function
+  or `platform/themes/[your-theme]/functions/functions.php`
 
 ```php
 remove_filter(DASHBOARD_FILTER_ADMIN_LIST);
 ```
 
 ## Main widgets
+
 ### Register new dashboard widget
 
-- Open your plugin service provider then add to the `boot` function or `platform/themes/[your-theme]/functions/functions.php`
+- Open your plugin service provider then add to the `boot` function
+  or `platform/themes/[your-theme]/functions/functions.php`
 
 ```php
 add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
@@ -66,9 +73,12 @@ add_filter(DASHBOARD_FILTER_ADMIN_LIST, function ($widgets, $widgetSettings) {
 
 `1221` is the priority, it can be any number but must unique.
 
-> {warning} You can find an example in platform/plugins/blog/src/Providers/HookServiceProvider.php line 137
+::: warning
+You can find an example in `platform/plugins/blog/src/Providers/HookServiceProvider.php` line 137
+:::
 
-- Create a controller to return main content for your widget, the route name is added in above code (Ex: `the-route-to-get-data`).
+- Create a controller to return main content for your widget; the route name is added in above code (
+  Ex: `the-route-to-get-data`).
 
 ```php
 public function getDataForWidget(\Illuminate\Http\Request $request, \Botble\Base\Http\Responses\BaseHttpResponse $response)
@@ -80,4 +90,6 @@ public function getDataForWidget(\Illuminate\Http\Request $request, \Botble\Base
 }
 ```
 
-> {warning} You can find an example in platform/plugins/blog/src/Http/Controllers/PostController.php line 207
+::: warning
+You can find an example in `platform/plugins/blog/src/Http/Controllers/PostController.php` line 207.
+:::

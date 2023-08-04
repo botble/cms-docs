@@ -4,7 +4,7 @@ The table to use `slug` must have column `name`. It's used to generate slug colu
 
 ## Add slug/permalink field to your new plugin
 
-\- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
+- Open `/plugins/<your-plugin>/src/Providers/<YourPlugin>ServiceProvider.php`. Add below code to function `boot`
 
 ```php
 \SlugHelper::registerModule(YourPluginModel::class);
@@ -13,7 +13,7 @@ The table to use `slug` must have column `name`. It's used to generate slug colu
 // "your-prefix" is prefix for your slug field. URL will be http://domain.local/your-prefix/slug-here
 ```
 
-\- If you're using form builder to generate forms for your plugin, slug field will be added to your form automatically.
+- If you're using form builder to generate forms for your plugin, slug field will be added to your form automatically.
 If you don't use form builder. To add slug field, use bellow code.
 
 For creating form:
@@ -34,7 +34,7 @@ For editing form:
 </div>
 ```
 
-\- Finally, you need to add a route to handle when users visit `http://domain.local/your-prefix/slug-here`
+- Finally, you need to add a route to handle when users visit `http://domain.local/your-prefix/slug-here`
 
 Example for route:
 

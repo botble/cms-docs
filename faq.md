@@ -2,7 +2,8 @@
 
 ## How to add new language to admin panel?
 
-- Add your language in Admin -> Locales and go to Admin -> Translations -> Other translations to translate admin panel to your language.
+- Add your language in Admin -> Locales and go to Admin -> Translations -> Other translations to translate admin panel
+  to your language.
 
 - Set default language for admin panel in Admin -> Settings -> General.
 
@@ -24,9 +25,10 @@ register_post_format([
 You can use `Theme::set()` and `Theme::get()` for partials views (using `Theme::partial('...')`).
 
 Example:
-In `public/themes/ripple/views/post.blade.php` you can add bellow code to share $post data.
 
-```php
+In `public/themes/ripple/views/post.blade.php` you can add bellow code to share `$post` data.
+
+```blade
 @php
     Theme::set('current_post', $post);
 @endphp
@@ -34,7 +36,7 @@ In `public/themes/ripple/views/post.blade.php` you can add bellow code to share 
 
 And if you want to use it in `public/themes/ripple/partials/header.blade.php`.
 
-```php
+```blade
 @php
     $current_post = Theme::get('current_post');
 @endphp
@@ -44,7 +46,7 @@ You can pass data like normal if you're using @include.
 
 Example:
 
-```php
+```blade
 @include('theme.ripple::partials.header', ['current_post' => $post])
 ```
 
@@ -78,7 +80,6 @@ function custom_breadcrumbs(string $screen, $post) {
 Add to `/platform/themes/your-theme/functions/functions.php`
 
 ```php
-
 \Event::listen(\Botble\Theme\Events\RenderingSingleEvent::class, function (\Botble\Theme\Events\RenderingSingleEvent $event) {
     if ($event->slug->reference_type == \Botble\Blog\Models\Post::class) {
         $post = $event->slug->reference()->with('categories')->first();

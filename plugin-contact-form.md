@@ -12,7 +12,7 @@ Add to page's content in Admin -> Pages:
 
 Or add in any view in platform/themes/your-theme/views
 
-```
+```blade
 {!! do_shortcode('[contact-form][/contact-form]) !!}
 ```
 
@@ -32,9 +32,9 @@ If you put the view file in /platform/themes/your-theme/partials/contact-form.bl
 
 Not: `your-theme` is your theme's name, if you're using theme `ripple` then it's `theme.ripple::partials.contact-form`
 
-Then copy base form content in platform/plugins/contact/resources/views/forms/contact.blade.php to your custom view and change it if you need.
+Then copy base form content in `platform/plugins/contact/resources/views/forms/contact.blade.php` to your custom view and change it if you need.
 
-```php
+```blade
 @if ($header)
     <h2 class="group-title text-uppercase">{{ $header }}</h2>
 @endif

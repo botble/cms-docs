@@ -1,9 +1,5 @@
 # Theme assets
 
-- [Basic usage of assets](#basic-usage-of-assets)
-- [Preparing group of assets](#preparing-group-of-assets)
-
-<a name="basic-usage-of-assets"></a>
 ## Basic usage of assets
 
 Add assets in your route.
@@ -23,8 +19,10 @@ $theme->asset()->usePath()->add('custom', 'css/custom.css', array('core-style'))
 // This case has dependency with "core-script".
 $theme->asset()->container('footer')->usePath()->add('custom', 'js/custom.js', array('core-script'));
 ```
-    
-> {info} You can force use theme to look up existing theme by passing parameter to method: $theme->asset()->usePath('default')
+
+::: info
+You can force use theme to look up existing theme by passing parameter to method: $theme->asset()->usePath('default')
+:::
 
 Writing in-line style or script.
 
@@ -82,10 +80,10 @@ app()->booted(function () {
 });
 ```
 
-<a name="preparing-group-of-assets"></a>
 ## Preparing group of assets.
 
-Some assets you don't want to add on a page right now, but you still need them sometimes, so "cook" and "serve" is your magic.
+Some assets you don't want to add on a page right now, but you still need them sometimes, so "cook" and "serve" is your
+magic.
 
 Cook your assets.
 
@@ -127,9 +125,8 @@ Serve theme when you need.
 Theme::asset()->serve('backbone');
 ```
 
-
 Then you can get output.
-    
+
 ```php
 ...
 <head>

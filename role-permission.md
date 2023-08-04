@@ -22,12 +22,12 @@ return [
 ];
 ```
 
-### How to add your permissions flags?
+## How to add your permissions flags?
 
 - You can config it from your plugin, after plugin generated, you can find `plugins/your-plugin/config/permissions.php`
-and change its content.
+  and change its content.
 
-Example: 
+Example:
 
 ```php
 return [
@@ -44,9 +44,10 @@ return [
 ];
 ```
 
-*List permissions are stored in config file. So when you change it, you need to run command "cms:user:rebuild-permissions" to update it into database again*
+*List permissions are stored in config file. So when you change it, you need to run the artisan
+command `cms:user:rebuild-permissions` to update it into database again.*
 
-### How to use it?
+## How to use it?
 
 Example: `core/acl/routes/web.php:27`
 
@@ -85,45 +86,49 @@ You can see logic to check permission here: `core/acl/src/Http/Middleware/Authen
 $route = $request->route()->getAction();
 $flag = array_get($route, 'permission', array_get($route, 'as'));
 $user = Auth::user();
+
 if ($flag && !$user->hasPermission($flag)) {
     if ($request->expectsJson()) {
         return response()->json(['message' => 'Unauthenticated.'], 401);
     }
+
     abort(401);
 }
 ```
 
-By default, it will use route name as permission flag to check. If you set `permission` in a route, it'll use this value to check.
+By default, it will use route name as permission flag to check. If you set `permission` in a route, it'll use this value
+to check.
 If `permission` is set to `false`, system will not check permission when a user access this route.
 If `permission` is set to `superuser`, just super user can access this route.
 
-### Available methods
+## Available methods
 
-#### hasPermission()
+### hasPermission()
 
 How to use: `$user->hasPermisison('posts.edit')` or `\Auth::user()->hasPermisison('posts.edit')`
 
 Example:
 
+```blade
+@if (Auth::user()->hasPermisison('posts.edit'))
+    // Show something here
+@else
+    // You don't have permission to edit a post
+@endif
 ```
-    @if (Auth::user()->hasPermisison('posts.edit'))
-        // Show something here
-    @else
-        // You don't have permission to edit a post
-    @endif
-```
 
-#### hasAnyPermissions()
+### hasAnyPermissions()
 
-It's same with hasPermission but you can pass an array permissions to check. It will return `true` it has any permission in a list.
-
+It's same with `hasPermission` but you can pass an array permissions to check. It will return `true` it has any
+permission
+in a list.
 
 Example:
 
-```
-    @if (Auth::user()->hasAnyPermisisons(['posts.edit', 'posts.delete']))
-        // Show something here
-    @else
-        // You don't have permission to edit a post
-    @endif
+```blade
+@if (Auth::user()->hasAnyPermisisons(['posts.edit', 'posts.delete']))
+    // Show something here
+@else
+    // You don't have permission to edit a post
+@endif
 ```

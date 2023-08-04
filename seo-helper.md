@@ -58,7 +58,9 @@ add_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, function ($screen, $data) {
 }, 120, 2);
 ```
 
-> {warning} You can find all available methods for SeoHelper in platform/packages/seo-helper/src/SeoHelper.php.
+::: warning
+You can find all available methods for SeoHelper in platform/packages/seo-helper/src/SeoHelper.php.
+:::
 
 ## Title & description
 

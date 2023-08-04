@@ -1,4 +1,4 @@
-# Setup Amazon S3   
+# Setup Amazon S3
 
 ## Instruction
 

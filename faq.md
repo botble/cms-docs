@@ -2,7 +2,8 @@
 
 ## How to add new language to admin panel?
 
-- Add your language in Admin -> Locales and go to Admin -> Translations -> Other translations to translate admin panel to your language.
+- Add your language in Admin -> Locales and go to Admin -> Translations -> Other translations to translate admin panel
+  to your language.
 
 - Set default language for admin panel in Admin -> Settings -> General.
 

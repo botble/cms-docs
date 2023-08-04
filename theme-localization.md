@@ -26,7 +26,8 @@ Ex: to translate your theme to Vietnamese.
 }
 ```
 
-You can also translate it from UI. 
+You can also translate it from UI.
+
 - Go to Admin -> Settings -> Languages then add a new language.
 - Go to Admin -> Appearance -> Theme translations to translate your theme.
 

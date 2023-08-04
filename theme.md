@@ -1,16 +1,15 @@
 # Theme
 
 ::: warning
-Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to reinstall it, then you can use dev commands.
+Dev tools are removed in the download package, you need to delete folder `/vendor` and run command `composer install` to
+reinstall it, then you can use dev commands.
 :::
-
 
 The first time you have to create theme "demo" structure, using the artisan command:
 
 ```bash
 php artisan cms:theme:create demo
 ```
-
 
 To delete an existing theme, use the command:
 
@@ -208,7 +207,6 @@ Theme::getContentArgument('name');
 Theme::hasContentArgument('name');
 ```
 
-
 ::: info
 Theme::place('content') is a reserve region to render sub-view.
 :::
@@ -263,6 +261,7 @@ public function getIndex()
 ```
 
 ## Rename the theme to the new name
+
 ### Using command line:
 
 ```bash
@@ -273,5 +272,6 @@ php artisan cms:theme:rename [current-name] [new-name]
 
 - Rename folder `platform/themes/[current-theme-name]` to `platform/themes/[new-name]`.
 - Rename folder `public/themes/[current-theme-name]` `to public/themes/[new-name]`.
-- Open table `settings` and replace all key `theme-[current-theme-name]` to `theme-[new-name]`, change setting theme to `[new-name]`.
+- Open table `settings` and replace all key `theme-[current-theme-name]` to `theme-[new-name]`, change setting theme
+  to `[new-name]`.
 - Open table `widgets` and replace all values in `theme` column to the new name `[new-name]`.

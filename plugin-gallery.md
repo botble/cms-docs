@@ -18,7 +18,8 @@ function render_galleries(int $limit)
 }
 ```
 
-If you need to custom display of list galleries, you just need to copy the content of `plugins/gallery/resources/views/gallery.blade.php` and customize it in your theme.
+If you need to custom display of list galleries, you just need to copy the content
+of `plugins/gallery/resources/views/gallery.blade.php` and customize it in your theme.
 
 ## Display galleries for page, post
 

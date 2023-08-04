@@ -1,7 +1,8 @@
 # Form builder
 
 We're using [kristijanhusak/laravel-form-builder](https://github.com/kristijanhusak/laravel-form-builder) to build form.
-Visit official document for more information [https://kristijanhusak.github.io/laravel-form-builder](https://kristijanhusak.github.io/laravel-form-builder)
+Visit official document for more
+information [https://kristijanhusak.github.io/laravel-form-builder](https://kristijanhusak.github.io/laravel-form-builder)
 
 Example:
 
@@ -86,7 +87,7 @@ If you want to show form field as mandatory field, add `required` class to label
 ])
 ```
 
-### Image field 
+### Image field
 
 ```php
 ->add('field_name', 'mediaImage', [
@@ -95,7 +96,7 @@ If you want to show form field as mandatory field, add `required` class to label
 ])
 ```
 
-### List of images field 
+### List of images field
 
 ```php
 ->add('field_name[]', 'mediaImages', [
@@ -256,6 +257,7 @@ $repeaterValue = json_encode([
 Default layout template for form is `core.base::forms.form`, you can set other layout for form.
 
 Example:
+
 ```php
 ->setFormOption('template', 'core.base::forms.form-modal')
 ```
@@ -292,7 +294,8 @@ $this
     ]);
 ```
 
-If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md-4` and add 1 more field inside `rowOpen1` and `rowClose1`.
+If you want to have 3 fields on a row, just need to change `col-md-6` to `col-md-4` and add 1 more field
+inside `rowOpen1` and `rowClose1`.
 
 ## Add more columns into existed form
 

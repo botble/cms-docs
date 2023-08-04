@@ -1,6 +1,7 @@
 # Plugin Structure
 
-All plugins are registered to Composer autoloader manually. It needs a `plugin.json` file to provide all needed information
+All plugins are registered to Composer autoloader manually. It needs a `plugin.json` file to provide all needed
+information
 for auto-loading.
 
 ![Image](https://botble.com/storage/uploads/1/docs/plugin-structure.jpg)
@@ -53,7 +54,8 @@ class Plugin implements PluginInterface
 }
 ```
 
-- `config/permissions.php`: Each plugin should have a configuration for permission. Permissions are codebase so we need to define it in this file.
+- `config/permissions.php`: Each plugin should have a configuration for permission. Permissions are codebase so we need
+  to define it in this file.
 
 Example:
 
@@ -81,8 +83,9 @@ return [
 ];
 ```
 
-- `database/migrations/2018_10_07_011632_create_demo_table.php`: After generating a plugin, it'll create a first migration, you should modify it before activating a plugin. When activating a plugin, its migrations will run automatically.
-
+- `database/migrations/2018_10_07_011632_create_demo_table.php`: After generating a plugin, it'll create a first
+  migration, you should modify it before activating a plugin. When activating a plugin, its migrations will run
+  automatically.
 
 Example:
 
@@ -120,7 +123,8 @@ if (!defined('DEMO_MODULE_SCREEN_NAME')) {
 }
 ```
 
-- `resources/lang/en/demo.php`: language for your plugin. If you need to translate to more languages, let add new translation file. Ex: `resources/lang/vi/demo.php`
+- `resources/lang/en/demo.php`: language for your plugin. If you need to translate to more languages, let add new
+  translation file. Ex: `resources/lang/vi/demo.php`
 
 Example:
 

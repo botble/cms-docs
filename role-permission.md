@@ -119,7 +119,8 @@ Example:
 
 ### hasAnyPermissions()
 
-It's same with `hasPermission` but you can pass an array permissions to check. It will return `true` it has any permission
+It's same with `hasPermission` but you can pass an array permissions to check. It will return `true` it has any
+permission
 in a list.
 
 Example:

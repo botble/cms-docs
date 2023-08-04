@@ -3,6 +3,7 @@
 ## Default menu locations
 
 `platform/packages/menu/config/general.php`
+
 ```php
 'locations' => [
     'header-menu' => 'Header Navigation',
@@ -10,7 +11,6 @@
     'footer-menu' => 'Footer Navigation',
 ],
 ```
-
 
 ## Render menu by location
 
@@ -44,6 +44,7 @@
 To customize view to display menu. You can create a file in `/public/themes/your-theme/partials`.
 
 Ex: `/platform/themes/your-theme/partials/custom-menu.blade.php`
+
 ```php
 <ul {!! $options !!}>
     @foreach ($menu_nodes as $key => $row)
@@ -76,4 +77,5 @@ And to show menu with custom view, using below code:
 !!}
 ```
 
-Menu in the location 'main-menu' will be generated using custom view in `/platform/themes/your-theme/partials/custom-menu.blade.php`
+Menu in the location 'main-menu' will be generated using custom view
+in `/platform/themes/your-theme/partials/custom-menu.blade.php`

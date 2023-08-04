@@ -1,4 +1,4 @@
-# Media - Setup BunnyCDN    
+# Media - Setup BunnyCDN
 
 ## Instruction
 

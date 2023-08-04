@@ -10,8 +10,9 @@ By: [Botble Technologies](https://botble.com)
 
 Email: [contact@botble.com](mailto:contact@botble.com)
 
-Thank you for purchasing this CMS. If you have any questions that are beyond the scope of this help file, 
-please feel free to email via my user page contact form [here](https://codecanyon.net/user/botble) for quickly support. Thank you so much!
+Thank you for purchasing this CMS. If you have any questions that are beyond the scope of this help file,
+please feel free to email via my user page contact form [here](https://codecanyon.net/user/botble) for quickly support.
+Thank you so much!
 
 ## Demo
 
@@ -42,4 +43,4 @@ Password: `159357`
 
 ## Botble Team
 
-Visit us at [https://botble.com](botble.com)
+Visit us at [https://botble.com](botble.com).

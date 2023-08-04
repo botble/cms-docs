@@ -18,4 +18,3 @@ Add to /platform/themes/your-theme/functions/functions.php or function boot() of
     }
 });
 ```
-

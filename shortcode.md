@@ -93,4 +93,3 @@ Example:
 ```php
 echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
-

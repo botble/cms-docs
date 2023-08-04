@@ -31,6 +31,7 @@ php artisan cms:backup:restore [backup date]
 `[backup date]` is an optional param, if you don't provide backup date, it will restore the latest backup.
 
 Ex:
+
 ```bash
 php artisan cms:backup:restore 2020-04-28 10-05-24
 ```
@@ -41,7 +42,7 @@ php artisan cms:backup:restore 2020-04-28 10-05-24
 php artisan cms:backup:remove [backup date]
 ```
 
-Ex: 
+Ex:
 
 ```bash
 php artisan cms:backup:remove 2020-04-28 10-05-24

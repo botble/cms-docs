@@ -82,7 +82,8 @@ app()->booted(function () {
 
 ## Preparing group of assets.
 
-Some assets you don't want to add on a page right now, but you still need them sometimes, so "cook" and "serve" is your magic.
+Some assets you don't want to add on a page right now, but you still need them sometimes, so "cook" and "serve" is your
+magic.
 
 Cook your assets.
 
@@ -124,9 +125,8 @@ Serve theme when you need.
 Theme::asset()->serve('backbone');
 ```
 
-
 Then you can get output.
-    
+
 ```php
 ...
 <head>

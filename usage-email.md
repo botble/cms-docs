@@ -25,7 +25,7 @@ Example:
 
 ### Using Mailgun
 
-Example: 
+Example:
 
 ![Image](https://live.staticflickr.com/65535/51303643467_885819f60c_b.jpg)
 
@@ -33,7 +33,7 @@ The secret key must have a prefix `key-`. Ex: `key-xxxxx`.
 
 ### Using SendGrid
 
-Example: 
+Example:
 
 ![Image](https://live.staticflickr.com/65535/51304400246_c7bab7111b_b.jpg)
 

@@ -1,3 +1,5 @@
+import { DefaultTheme } from 'vitepress'
+
 export default [
   { text: 'Introduction', link: '/cms/' },
   { text: 'Screenshots', link: '/cms/screenshots' },
@@ -85,4 +87,4 @@ export default [
       { text: 'Reset admin password', link: '/cms/usage-reset-admin-password' },
     ],
   },
-];
+] satisfies DefaultTheme.SidebarItem[];

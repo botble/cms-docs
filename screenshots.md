@@ -1,6 +1,7 @@
 # Screenshots
 
 ## Dashboard
+
 Dashboard with Google Analytics, recent posts, error logs...
 
 ![Dashboard](https://botble.com/storage/uploads/1/docs/screenshots/dashboard.png)
@@ -10,6 +11,7 @@ Dashboard with Google Analytics, recent posts, error logs...
 ![Edit Page](https://botble.com/storage/uploads/1/docs/screenshots/edit-page.png)
 
 ## Theme
+
 2 themes already now.
 
 ![Theme](https://botble.com/storage/uploads/1/docs/screenshots/theme.png)
@@ -18,8 +20,8 @@ Dashboard with Google Analytics, recent posts, error logs...
 
 ![Menu](https://botble.com/storage/uploads/1/docs/screenshots/menu.png)
 
-
 ## Widget
+
 This widget likes with WordPress widget.
 
 ![Widget](https://botble.com/storage/uploads/1/docs/screenshots/widget.png)
@@ -37,6 +39,7 @@ This widget likes with WordPress widget.
 ![Media](https://botble.com/storage/uploads/1/docs/screenshots/media.png)
 
 ## Plugins
+
 There are many plugins for you now.
 
 ![Plugins](https://botble.com/storage/uploads/1/docs/screenshots/plugin.png)

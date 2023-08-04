@@ -56,14 +56,13 @@ Display theme option in the theme.
 {{ theme_option('option_name') }}
 ```
 
-or 
+or
 
 ```php
 {!! theme_option('option_name') !!}
 ```
 
 for theme option with HTML content.
- 
 
 ## Supported fields
 

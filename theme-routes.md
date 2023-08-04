@@ -4,7 +4,6 @@ Routes for theme are located in `/platform/themes/[your-theme]/routes/web.php`
 
 Please add your custom routes on the top of file to make sure it is not overridden by default routes.
 
-    
 ```php
 <?php
 

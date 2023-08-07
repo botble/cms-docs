@@ -4,7 +4,7 @@
 
 - Go to Admin -> Appearance -> Custom CSS.
 
-![Custom CSS](./images//usage-custom-css.png)
+![Custom CSS](./images/usage-custom-css.png)
 
 ## Custom JS
 

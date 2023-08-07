@@ -78,6 +78,7 @@ export default [
   {
     text: 'Usage',
     items: [
+      { text: 'Custom CSS/JS', link: '/cms/usage-custom-css-js' },
       { text: 'Setup email', link: '/cms/usage-email' },
       { text: 'Media - Setup Amazon S3', link: '/cms/usage-media-s3' },
       { text: 'Media - Setup Wasabi', link: '/cms/usage-media-wasabi' },

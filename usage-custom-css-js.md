@@ -4,13 +4,13 @@
 
 - Go to Admin -> Appearance -> Custom CSS.
 
-![Overview](https://live.staticflickr.com/65535/51713677177_fc6d602621_b.jpg)
+![Custom CSS](./images//usage-custom-css.png)
 
 ## Custom JS
 
 - Go to Admin -> Appearance -> Custom JS.
 
-![Overview](https://live.staticflickr.com/65535/51289616710_9b62ec6d4a_b.jpg)
+![Custom JS](./images/usage-custom-js.png)
 
 ## Add your CSS/JS directly in the source code
 

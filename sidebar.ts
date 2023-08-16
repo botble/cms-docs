@@ -83,7 +83,7 @@ export default [
       { text: 'Media - Setup Amazon S3', link: '/cms/usage-media-s3' },
       { text: 'Media - Setup Wasabi', link: '/cms/usage-media-wasabi' },
       { text: 'Media - Setup BunnyCDN', link: '/cms/usage-media-bunnycdn' },
-      { text: 'Analytics', link: '/cms/plugin-analytics' },
+      { text: 'Analytics', link: '/cms/usage-analytics' },
       { text: 'Setup social login', link: '/cms/usage-social-login' },
       { text: 'Reset admin password', link: '/cms/usage-reset-admin-password' },
     ],

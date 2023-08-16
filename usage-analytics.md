@@ -39,11 +39,11 @@ Enable API
 ### Setup timezone and clear cache
 
 - Go to Admin -> Settings -> General and setup timezone to your local timezone.
--
+
 ![Image](./images/analytics-timezone.png)
 
 - Go to Admin -> Platform Administration -> Cache management and clear your site cache.
--
+
 ![Image](./images/analytics-cache.png)
 
 ::: warning

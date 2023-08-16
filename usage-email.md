@@ -8,13 +8,13 @@ Support Mailgun, SendGrid, SES, Gmail, Sendmail... and other SMTP mail services.
 
 Make sure that you have saved settings (button Save settings at the bottom of page) before sending a test email.
 
-![Image](https://live.staticflickr.com/65535/51289335619_810529d67d_b.jpg)
+![](./images/mail-1.jpg)
 
 ### Using Gmail
 
 Example:
 
-![Image](https://live.staticflickr.com/65535/51304592333_3bd148968b_b.jpg)
+![](./images/mail-2.jpg)
 
 - Mail Driver: `SMTP`
 - Mail Host: `smtp.gmail.com`
@@ -27,7 +27,7 @@ Example:
 
 Example:
 
-![Image](https://live.staticflickr.com/65535/51303643467_885819f60c_b.jpg)
+![](./images/mail-3.jpg)
 
 The secret key must have a prefix `key-`. Ex: `key-xxxxx`.
 
@@ -35,7 +35,7 @@ The secret key must have a prefix `key-`. Ex: `key-xxxxx`.
 
 Example:
 
-![Image](https://live.staticflickr.com/65535/51304400246_c7bab7111b_b.jpg)
+![](./images/mail-4.jpg)
 
 - Mail Host: `smtp.sendgrid.net`
 - Mail Port: 587
@@ -43,12 +43,12 @@ Example:
 
 ### Using Yandex
 
-![Image](https://live.staticflickr.com/65535/51303663112_cb197f4a8f_b.jpg)
+![](./images/mail-5.jpg)
 
 ## Edit Email template
 
-- Email template using HTML & system variables.You need to know HTML and Laravel blade.
+- Email template using HTML & and click dropdown **Variables* to insert available `variable`. You need to know HTML and Laravel blade.
 
-![Image](https://live.staticflickr.com/65535/51289630420_ef275de3a0_b.jpg)
+![](./images/mail-6.jpg)
 
-![Image 2](https://live.staticflickr.com/65535/51289337089_9aabc52fcb_b.jpg)
+![](./images/mail-7.png)

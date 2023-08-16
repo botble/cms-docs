@@ -1,82 +1,108 @@
-# Introduction
+# Installation
 
 ## Requirement
 
-- Apache, nginx, or another compatible web server.
-- PHP >= 8.0.2 >> Higher
+Before installing our CMS, ensure that your server meets the following requirements:
+
+- Apache, nginx, or another compatible web server
+- PHP >= 8.0 or higher
 - MySQL Database server
-- BCMath PHP Extension
-- Ctype PHP Extension
-- Fileinfo PHP extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
-- Module Re_write server
-- PHP_CURL Module Enable
+- `PDO` PHP extension
+- `OpenSSL` PHP extension
+- `mbstring` PHP extension
+- `exif` PHP extension
+- `fileinfo` PHP extension
+- `xml` PHP extension
+- `Ctype` PHP extension
+- `JSON` PHP extension
+- `Tokenizer` PHP extension
+- `cURL` PHP extension
+- Ensure the `mod_rewrite` Apache module is enabled
 
 ## PHP Configuration
 
-Open your php configuration file php.ini and change the following settings.
+Open your php configuration file `php.ini` and change the following settings.
 
 ```ini
 memory_limit = 128M
 max_execution_time = 300
 ```
 
-If you are using Cpanel, you can follow this article to change your PHP memory limit
-settings https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cpanel/
+If you are using cPanel, you can follow this article to change your PHP memory limit
+settings https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cPanel/.
 
 ::: warning
-On this project, we're using the latest Laravel version (currently 9.x). Please go to [Laravel documentation
-page](https://laravel.com/docs) for more information.
+On this project, we're using the Laravel 9.x. Please go to [Laravel documentation page](https://laravel.com/docs/9.x)
+for more information.
 :::
 
-> It’s based on Laravel framework, the root folder for it is /public. You shouldn’t install it on a sub-folder, use
-> sub-domain is better than sub-folder. (we won’t support to install our product on sub-folder).
+## Installing
 
-## Install on hosting
+### Install on hosting
 
-::: warning
-If you're a Laravel developer and you want to customize our source code in `platform/core` and `platform/packages`, you
-need to delete folder `/vendor` then run command `composer install` to reinstall vendor packages.
+::: tip
+For Laravel developers looking to customize the source code in `platform/core` and `platform/packages`, delete
+the `/vendor` folder, and then run the `composer install` command to reinstall vendor packages.
 :::
+
+#### Video tutorial
+
+Check this video to see how to install it on hosting.
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/zFbWYpjuFJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - Upload all files into the root folder of your hosting (normally, it is`public_html`).
 - Create a database and import data from `database.sql` (it's located in source code).
-- Create `.env` from `.env.example` and update your database credentials.
-- Make sure `APP_URL` in `.env` is correct your domain. It should be `APP_URL=http://your-domain.com`
+  ![Database](./images/installation-1.png)
+- Update your database credentials and `APP_URL` in `.env`.
+  ![Env](./images/installation-2.png)
 - Go to `/admin` to access to admin panel.
 - The default admin account is `botble` - `159357`.
+  ![Login](./images/installation-3.png)
 
-## Install locally or in VPS
+### Install Locally or on a VPS
+
+1. Update your database credentials and `APP_URL` in `.env`.
+
+2. **Using Sample Data:**
+
+- Import the database from `database.sql`.
+
+3. **Without Sample Data:**
+
+- Run `php artisan migrate` to create the database structure.
+- Run `php artisan cms:user:create` to create an admin user.
+- Run `php artisan cms:theme:activate ripple`.
+
+4. **If You've Pulled Source Code from a GIT Server:**
+
+- Run `php artisan cms:publish:assets`.
+
+5. **Run Locally:**
+
+- Change `APP_URL` in `.env` to `APP_URL=http://localhost:8000`.
+- Run `php artisan serve`. Open `http://localhost:8000` to see the homepage.
+- Access the admin panel by going to `/admin`.
+- For sample data, the default admin account is `botble` with the password `159357`.
+- If you're not using sample data, you need to go to **Admin** -> **Plugins** and activate all plugins.
+
+## Configuring for Sub-Folders
 
 ::: warning
-If you're a Laravel developer and you want to customize our source code in `platform/core` and `platform/packages`, you
-need to delete folder `/vendor` then run command `composer install` to reinstall vendor packages.
+Since our CMS is based on the Laravel framework, its root folder is `/public`. If you're installing it in a sub-folder,
+you'll need to access `your-domain.com/sub-folder/public`. To remove `/public` from the URL, follow the steps in
+the [provided video tutorial](https://youtu.be/XdAYETd04iA).
 :::
 
-- Create `.env` file from `.env-example` and update your configuration.
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/XdAYETd04iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-- Using sample data:
-    - Option 1: Import database from `database.sql`.
-    - Option 2: Run `php artisan migrate --seed`
+## Setting Up Cron Jobs
 
-- Don't use sample data:
-    - Run `php artisan migrate` to create database structure.
+A cron job is used to automatically send abandoned cart emails every week. You can skip this step if this feature isn't
+needed.
 
-    - Run `php artisan cms:user:create` to create admin user.
+```bash
+* * * * * /usr/local/bin/php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1
+```
 
-    - Run `php artisan cms:theme:activate ripple`
-
-- If you're pulled source code from GIT server:
-    - Run `php artisan cms:publish:assets`
-
-- Run web locally:
-    - Change `APP_URL` in `.env` to `APP_URL=http://localhost:8000`
-    - Run `php artisan serve`. Open `http://localhost:8000`, you should see the homepage.
-    - Go to `/admin` to access to admin panel.
-    - If you're using sample data, the default admin account is `botble` - `159357`.
-    - If you don't use sample data, you need to go to Admin -> Plugins then activate all plugins.
+For setting up a cron job in cPanel, watch this [video tutorial](https://youtu.be/t5mjWGegE-g).

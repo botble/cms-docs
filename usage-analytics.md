@@ -22,7 +22,7 @@ If you got this error:
 
 ![Image](./images/analytics-service-not-enabled.png)
 
-You need to enable "Google Analytics API services".
+You need to enable "Google Analytics Data API".
 
 Select project
 

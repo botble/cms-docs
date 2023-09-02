@@ -14,6 +14,12 @@ Property ID: https://developers.google.com/analytics/devguides/reporting/data/v1
 
 Service Account Credentials: https://github.com/akki-io/laravel-google-analytics/wiki/2.-Configure-Google-Service-Account-&-Google-Analytics
 
+After getting JSON credential file, you need to open this file and copy content to "Service Account Credential" field.
+
+The final setting will look like this:
+
+![Demo settings](./images/analytics-demo-settings.png)
+
 ## Troubleshooting
 
 ### Service is not enabled

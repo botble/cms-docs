@@ -20,6 +20,10 @@ The final setting will look like this:
 
 ![Demo settings](./images/analytics-demo-settings.png)
 
+Check this video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2q7ufd8W8WI?si=XZnYcfZ55vg2WgSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Troubleshooting
 
 ### Service is not enabled

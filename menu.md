@@ -36,7 +36,7 @@
 ## Remove a menu location
 
 ```php
-   Menu:removeMenuLocation('menu-location-key');
+   Menu::removeMenuLocation('menu-location-key');
 ```
 
 ## Customize menu views

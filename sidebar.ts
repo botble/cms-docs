@@ -61,7 +61,6 @@ export default [
       { text: 'Slug field', link: '/cms/slug-field' },
       { text: 'Localization', link: '/cms/localization' },
       { text: 'Sitemap', link: '/cms/sitemap' },
-      { text: 'Mail', link: '/cms/mail' },
       { text: 'FAQ', link: '/cms/faq' },
     ],
   },
@@ -87,6 +86,7 @@ export default [
       { text: 'Multi-language', link: '/cms/usage-multi-language' },
       { text: 'Setup social login', link: '/cms/usage-social-login' },
       { text: 'Reset admin password', link: '/cms/usage-reset-admin-password' },
+      { text: 'Setup cronjob', link: '/cms/cronjob' },
     ],
   },
 ] satisfies DefaultTheme.SidebarItem[];

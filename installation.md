@@ -2,10 +2,10 @@
 
 ## Requirement
 
-Before installing our CMS, ensure that your server meets the following requirements:
+Before installing our script, ensure that your server meets the following requirements:
 
 - Apache, nginx, or another compatible web server
-- PHP >= 8.0 or higher
+- PHP >= 8.1 or higher
 - MySQL Database server
 - `PDO` PHP extension
 - `OpenSSL` PHP extension
@@ -24,7 +24,7 @@ Before installing our CMS, ensure that your server meets the following requireme
 Open your php configuration file `php.ini` and change the following settings.
 
 ```ini
-memory_limit = 128M
+memory_limit = 256M
 max_execution_time = 300
 ```
 
@@ -72,7 +72,7 @@ Check this video to see how to install it on hosting.
 
 - Run `php artisan migrate` to create the database structure.
 - Run `php artisan cms:user:create` to create an admin user.
-- Run `php artisan cms:theme:activate ripple`.
+- Run `php artisan cms:theme:activate`.
 
 4. **If You've Pulled Source Code from a GIT Server:**
 
@@ -89,7 +89,7 @@ Check this video to see how to install it on hosting.
 ## Configuring for Sub-Folders
 
 ::: warning
-Since our CMS is based on the Laravel framework, its root folder is `/public`. If you're installing it in a sub-folder,
+Since our script is based on the Laravel framework, its root folder is `/public`. If you're installing it in a sub-folder,
 you'll need to access `your-domain.com/sub-folder/public`. To remove `/public` from the URL, follow the steps in
 the [provided video tutorial](https://youtu.be/XdAYETd04iA).
 :::

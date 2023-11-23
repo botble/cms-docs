@@ -71,7 +71,6 @@ export default [
       { text: 'Contact form', link: '/cms/plugin-contact-form' },
       { text: 'Gallery', link: '/cms/plugin-gallery' },
       { text: 'Backup', link: '/cms/plugin-backup' },
-      { text: 'Language', link: '/cms/plugin-language' },
     ],
   },
   {

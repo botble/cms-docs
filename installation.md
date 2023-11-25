@@ -57,7 +57,7 @@ for more information.
 
   - Update your database credentials and `APP_URL` in `.env`.
     ![Env](./images/installation-2.png)
-  - 
+
   - Go to `/admin` to access to admin panel.
 
   - The default admin account is `botble` - `159357`.

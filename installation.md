@@ -42,9 +42,13 @@ for more information.
 
 ### Install with our Installer UI
 
+- Video:
+
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/iam99NkUIu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Manually
+
+- Video:
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/zFbWYpjuFJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

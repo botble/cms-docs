@@ -1,4 +1,4 @@
-## Install using command line.
+# Install using command line.
 
 - Open `.env` file and set up your credentials.
 

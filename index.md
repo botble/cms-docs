@@ -2,7 +2,7 @@
 
 ## Introduction
 
-PHP platform based on Laravel Framework 9.x
+PHP platform based on Laravel Framework 10.x
 
 Created: `07/06/2016`
 

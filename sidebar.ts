@@ -39,7 +39,6 @@ export default [
       { text: 'Layouts', link: '/cms/theme-layout' },
       { text: 'Error pages', link: '/cms/theme-error-pages' },
       { text: 'Theme localization', link: '/cms/theme-localization' },
-      { text: 'Rename theme', link: '/cms/theme-rename' },
     ],
   },
   {
@@ -85,7 +84,14 @@ export default [
       { text: 'Multi-language', link: '/cms/usage-multi-language' },
       { text: 'Setup social login', link: '/cms/usage-social-login' },
       { text: 'Reset admin password', link: '/cms/usage-reset-admin-password' },
-      { text: 'Setup cronjob', link: '/cms/cronjob' },
     ],
   },
+  {
+    text: 'Extras',
+    items: [
+      { text: 'Installation using command line', link: '/cms/installation-command-line' },
+      { text: 'Rename theme', link: '/cms/theme-rename' },
+      { text: 'Setup cronjob', link: '/cms/cronjob' },
+    ]
+  }
 ] satisfies DefaultTheme.SidebarItem[];

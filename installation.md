@@ -18,6 +18,7 @@ Before installing our script, ensure that your server meets the following requir
 - `Tokenizer` PHP extension
 - `cURL` PHP extension
 - `zip` PHP extension
+- `iconv` PHP extension
 - Ensure the `mod_rewrite` Apache module is enabled
 
 ## PHP Configuration

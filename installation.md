@@ -30,8 +30,7 @@ memory_limit = 256M
 max_execution_time = 300
 ```
 
-If you are using cPanel, you can follow this article to change your PHP memory limit
-settings https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cPanel/.
+If you are using cPanel, you can follow [this article](https://chemicloud.com/kb/article/how-to-increase-the-php-memory-limit-in-cpanel/) to change your PHP memory limit settings.
 
 ::: warning
 On this project, we're using the Laravel 10.x. Please go to [Laravel documentation page](https://laravel.com/docs/10.x)
@@ -45,6 +44,12 @@ for more information.
 - Video:
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/iam99NkUIu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+- Steps:
+  - Create database and extract source codes into your web root directory.
+  - Go to `[your-domain.com]` to start installation.
+  - Step by step to set up your database connection, site information and administrator.
+  - Login and set up your website on **Welcome Board**.
 
 ### Manually
 

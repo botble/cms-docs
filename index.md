@@ -16,9 +16,9 @@ Thank you so much!
 
 ## Demo
 
-Homepage: [https://cms.botble.com](https://cms.botble.com)
+Homepage: https://cms.botble.com
 
-Admin Area: [https://cms.botble.com/admin](https://cms.botble.com/admin)
+Admin Area: https://cms.botble.com/admin
 
 Username: `botble`
 
@@ -43,4 +43,4 @@ Password: `159357`
 
 ## Botble Team
 
-Visit us at [https://botble.com](botble.com).
+Visit us at [botble.com](https://botble.com).

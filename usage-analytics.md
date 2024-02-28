@@ -6,7 +6,7 @@ Integrate with Google Analytics
 
 Please check instruction in Admin -> Settings -> General.
 
-![Instructions](./images/analytics-instruction.png)
+![Instructions](../cms/images/analytics-instruction.png)
 
 Google tag ID: https://support.google.com/analytics/answer/9539598#find-G-ID
 
@@ -18,7 +18,7 @@ After getting JSON credential file, you need to open this file and copy content 
 
 The final setting will look like this:
 
-![Demo settings](./images/analytics-demo-settings.png)
+![Demo settings](../cms/images/analytics-demo-settings.png)
 
 Check this video:
 
@@ -30,31 +30,31 @@ Check this video:
 
 If you got this error:
 
-![Image](./images/analytics-service-not-enabled.png)
+![Image](../cms/images/analytics-service-not-enabled.png)
 
 You need to enable "Google Analytics Data API".
 
 Select project
 
-![Image](./images/analytics-select-project.png)
+![Image](../cms/images/analytics-select-project.png)
 
 Search for API
 
-![Image](./images/analytics-select-api.png)
+![Image](../cms/images/analytics-select-api.png)
 
 Enable API
 
-![Image](./images/analytics-enable-api.png)
+![Image](../cms/images/analytics-enable-api.png)
 
 ### Setup timezone and clear cache
 
 - Go to Admin -> Settings -> General and setup timezone to your local timezone.
 
-![Image](./images/analytics-timezone.png)
+![Image](../cms/images/analytics-timezone.png)
 
 - Go to Admin -> Platform Administration -> Cache management and clear your site cache.
 
-![Image](./images/analytics-cache.png)
+![Image](../cms/images/analytics-cache.png)
 
 ::: warning
 Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from

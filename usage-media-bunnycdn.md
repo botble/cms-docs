@@ -4,7 +4,7 @@
 
 If you need to use BunnyCDN for storage, you can configure to use BunnyCDN in Admin -> Settings -> Media.
 
-![Image](./images/bunny-cdn-setting.jpg)
+![Image](../cms/images/bunny-cdn-setting.jpg)
 
 ## Video Tutorial
 

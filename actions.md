@@ -42,7 +42,7 @@ Function: Execute functions hooked on a specific action hook.
 ```php
 do_action(string $tag,  $arg = '')
 ```
-    
+
 ### Description
 
 This function invokes all functions attached to action hook `$tag`. 

@@ -4,7 +4,7 @@
 
 If you need to use S3 for storage, you can configure to use S3 in Admin -> Settings -> Media.
 
-![Image](./images/media-s3-setting.jpg)
+![Image](../cms/images/media-s3-setting.jpg)
 
 ## Video Tutorial
 

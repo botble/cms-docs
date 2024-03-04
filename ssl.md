@@ -14,7 +14,7 @@ for example **Let's Encrypt**.
 - Option 1: Add `ENABLE_HTTPS_SUPPORT=true` to `.env` file
 - Option 2: Add to `.env` file following code:
 
-```dotenv
+```
 FORCE_SCHEMA=https
 FORCE_ROOT_URL=https://domain.com
 ENABLE_HTTPS_SUPPORT=false

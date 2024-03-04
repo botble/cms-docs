@@ -1,27 +1,23 @@
 # Translation
 
-## Add your language
+## Adding a new Language
 
-Go to `Admin` -> `Settings` -> `Languages`
+Prefer go to [Multi Language](./usage-multi-language.md#adding-a-new-language) to read more about how to add a new language.
 
-![](../cms/images/multi-language.png)
-
-## Translate theme
+## Translating the Theme
 
 Go to `Admin` -> `Translation` -> `Theme translations`
 
 Click to your language on the right side to translate it to your language.
 
-![](../cms/images/translation-translate-theme.png)
+![Theme Translations](../cms/images/translation-theme-translations.png)
 
-## Other translations
+## Translating Other Elements
 
 Go to `Admin` -> `Translation` -> `Other translations`
 
-Select a group to start translate.
+![Other Translations](../cms/images/translation-other-translations.png)
 
-![](../cms/images/translation-other-translations.png)
+You also can filter the translations by the group:
 
-::: tip
-If you don't see any group in the select box, you need to import them by choose **Append new translations** and click to the **Import** button.
-:::
+![Other Translations group](../cms/images/translation-other-translations-filter.png)

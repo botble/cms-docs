@@ -2,25 +2,22 @@
 
 ## Instruction
 
-If you need to use Wasabi for storage, you can configure to use Wasabi in Admin -> Settings -> Media.
+In admin panel, go to `Settings` -> `Media` to configure Wasabi for storage.
 
-![](../cms/images/wasabi-1.jpg)
+![Wasabi settings](../cms/images/wasabi-1.png)
 
 ### Steps
 
-- Create a new bucket:
+1. Create a new bucket in Wasabi:
 
-![](../cms/images/wasabi-2.jpg)
+   ![Creating a New Bucket](../cms/images/wasabi-2.jpg)
 
-- Change your bucket to Public:
+2. Change your bucket to public:
 
+   ![Changing Bucket to Public](../cms/images/wasabi-3.jpg)
 
-![](../cms/images/wasabi-3.jpg)
+3. Get your access keys from Wasabi:
 
-![](../cms/images/wasabi-4.jpg)
+   ![Getting Access Keys](../cms/images/wasabi-4.jpg)
 
-- Get access keys:
-
-![](../cms/images/wasabi-5.jpg)
-
-![](../cms/images/wasabi-6.jpg)
+   ![Getting Access Keys](../cms/images/wasabi-5.jpg)

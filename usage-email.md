@@ -2,7 +2,7 @@
 
 ## Setup Email
 
-Need to config mail in Admin -> Settings -> Email.
+In admin panel, go to `Settings` -> `Email` to configure your email settings.
 
 Support Mailgun, SendGrid, SES, Gmail, Sendmail... and other SMTP mail services. We suggest use Mailgun to send mail.
 

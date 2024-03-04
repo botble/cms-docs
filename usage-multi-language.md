@@ -1,25 +1,30 @@
 # Multi-language
 
-## Setup languages
+## Setting Up Languages
 
-Go to `Admin` -> `Settings` -> `Languages`
+Navigate to admin panel and click to `Settings` -> `Languages`.
 
-![](./images/multi-language.png)
+![Multi Language](../cms/images/multi-language-1.png)
 
-## Change default language
+## Changing the Default Language
 
-Example: Change default language to `Japanese`.
+### Adding a New Language
 
-First, you need to add `Spanish` language in `Admin` -> `Settings` -> `Languages`.
+To change the default language, you first need to add the desired language. In this example, we will add **Tiếng Việt
+** (Vietnamese) language.
 
-![](./images/multi-language-1.png)
+![Adding a New Language](../cms/images/multi-language-2.png)
 
-After that, just click on the button **Is default?** column to make `Japanese` language as default.
+### Setting the Default Language
 
-![](./images/multi-language-2.jpg)
+Once the language is added, click on the **Is default?** button in the **Tiếng Việt** row to make it the default
+language.
 
-## Disable multi-language
+![Setting the Default Language](../cms/images/multi-language-3.png)
 
-Go to `Admin` -> `Plugins` -> find `Language` and `Language Advanced` plugins and disable them.
+## Disabling Multi-language
 
-![](./images/multi-language-3.png)
+Navigate to `Plugins` -> `Installed Plugins` and type **language** in the search bar. Find the **Language**
+and **Language Advanced** plugins and disable them to disable multi-language functionality.
+
+![](../cms/images/multi-language-4.png)

@@ -4,63 +4,55 @@ Integrate with Google Analytics
 
 ## Getting credentials
 
-Please check instruction in Admin -> Settings -> General.
+Navigate to `Settings` -> `Others` -> `Google Analytics` to find instructions for integrating with Google Analytics.
 
-![Instructions](./images/analytics-instruction.png)
+![Instructions](../cms/images/analytics-instruction.png)
 
-Google tag ID: https://support.google.com/analytics/answer/9539598#find-G-ID
+* Google tag ID: Follow [this link](https://support.google.com/analytics/answer/9539598#find-G-ID) to find your Google
+  Tag ID.
+* Property ID: Visit [this link](https://developers.google.com/analytics/devguides/reporting/data/v1/property-id) to
+  find your Property ID.
+* Service Account Credentials: Follow the
+  instructions [here](https://github.com/akki-io/laravel-google-analytics/wiki/2.-Configure-Google-Service-Account-&-Google-Analytics)
+  to set up Service Account Credentials.
 
-Property ID: https://developers.google.com/analytics/devguides/reporting/data/v1/property-id
+After obtaining the JSON credential file, open it and copy its content to the "Service Account Credential" field.
 
-Service Account Credentials: https://github.com/akki-io/laravel-google-analytics/wiki/2.-Configure-Google-Service-Account-&-Google-Analytics
+![Demo settings](../cms/images/analytics-demo-settings.png)
 
-After getting JSON credential file, you need to open this file and copy content to "Service Account Credential" field.
-
-The final setting will look like this:
-
-![Demo settings](./images/analytics-demo-settings.png)
-
-Check this video:
+Watch this video for a visual guide.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2q7ufd8W8WI?si=XZnYcfZ55vg2WgSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Troubleshooting
 
-### Service is not enabled
+### Service Not Enabled Error
 
-If you got this error:
+If you encounter the "Service is not enabled" error:
 
-![Image](./images/analytics-service-not-enabled.png)
+![Image](../cms/images/analytics-service-not-enabled.png)
 
-You need to enable "Google Analytics Data API".
+1. **Enable Google Analytics Data API**
 
-Select project
+   Go to your Google Cloud Console, select your project, search for "APIs & Services", and enable the "Google Analytics
+   Data API".
 
-![Image](./images/analytics-select-project.png)
+   ![Image](../cms/images/analytics-select-project.png)
 
-Search for API
+   ![Image](../cms/images/analytics-select-api.png)
 
-![Image](./images/analytics-select-api.png)
+   ![Image](../cms/images/analytics-enable-api.png)
 
-Enable API
+2. **Setup Timezone and Clear Cache**
 
-![Image](./images/analytics-enable-api.png)
+   In admin panel, go to -> `Settings` -> `General` and set your local timezone. Then, go
+   to `Platform Administration` -> `Cache Management` and clear your site cache.
 
-### Setup timezone and clear cache
+   ![Image](../cms/images/analytics-timezone.png)
 
-- Go to Admin -> Settings -> General and setup timezone to your local timezone.
+   ![Clear Cache](../cms/images/analytics-clear-cache.png)
 
-![Image](./images/analytics-timezone.png)
-
-- Go to Admin -> Platform Administration -> Cache management and clear your site cache.
-
-![Image](./images/analytics-cache.png)
-
-::: warning
-Analytics data in Admin dashboard is displayed daily data, so it will reset chart every day. It is displaying data from
-API, not realtime analytics so please wait until your site has data from API.
+::: tip
+The analytics data in the Admin dashboard is displayed daily and resets every day. It is not real-time data but data
+from the API. Please wait until your site has data from the API.
 :::
-
-Give your comment here if you got any problem.
-
-Good luck!

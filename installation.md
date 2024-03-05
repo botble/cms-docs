@@ -70,7 +70,7 @@ You can install our script manually by following these steps:
 
   ![Env](../cms/images/installation-2.png)
 - Go to `/admin` to access to admin panel.
-- The default admin account is `botble` - `159357`.
+- The default admin account is `admin` - `12345678`.
 
   ![Login](../cms/images/installation-3.png)
 

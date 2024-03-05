@@ -13,5 +13,5 @@
 - Admin panel URL: `http://localhost:8000/admin`
 
 - Default admin account:
-    - If you use our sample data, the default admin account is `botble` with the password `159357`.
+    - If you use our sample data, the default admin account is `admin` with the password `12345678`.
     - If not, run `php artisan cms:user:create` to create an admin user.

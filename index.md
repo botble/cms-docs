@@ -20,9 +20,9 @@ Homepage: https://cms.botble.com
 
 Admin Area: https://cms.botble.com/admin
 
-Username: `botble`
+Username: `admin`
 
-Password: `159357`
+Password: `12345678`
 
 ## Why choose us
 

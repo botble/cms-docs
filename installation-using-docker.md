@@ -35,3 +35,7 @@ Somethings ports are already in use, you can change the port in the `docker-comp
 ### Service is not running issue.
 
 If you encounter the "service 'app' is not running" error, try to run `docker compose down`, then open file `docker-compose.yml` and change the service `laravel.test` to `app` in the `services` section and run `docker compose up -d` again.
+
+### Rebuild images
+
+Run `docker-compose down --volumes` and then `sail up --build` to rebuild the images.

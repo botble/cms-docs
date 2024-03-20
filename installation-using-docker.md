@@ -29,3 +29,9 @@ _Docker installation for development only, do not use it on production environme
 If you have any issues with the `docker compose` command, try to use `docker-compose` instead.
 Somethings ports are already in use, you can change the port in the `docker-compose.yml` file or use environment variables to change the port (e.g: `APP_PORT=8080`).
 :::
+
+## Issues
+
+### Service is not running issue.
+
+If you encounter the "service 'app' is not running" error, try to run `docker compose down`, then open file `docker-compose.yml` and change the service `laravel.test` to `app` in the `services` section and run `docker compose up -d` again.

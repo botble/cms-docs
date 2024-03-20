@@ -15,6 +15,7 @@ export default [
     items: [
       { text: 'Installation', link: '/cms/installation' },
       { text: 'Installation using command line', link: '/cms/installation-command-line' },
+      { text: 'Installation using Docker', link: '/cms/installation-using-docker' },
       { text: 'SSL', link: '/cms/ssl' },
       { text: 'License', link: '/cms/license' },
     ],

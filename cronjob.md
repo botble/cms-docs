@@ -20,6 +20,10 @@ For setting up a cron job in cPanel, watch this video tutorial:
 
 ![Image](../cms/images/cronjob-setup-on-hostinger.png)
 
+If you have more than 1 domain on Hostinger, you need to select the domain you want to set up the cron job.
+
+![Image](../cms/images/cronjob-setup-on-hostinger-multiple-domains.png)
+
 * Verify your cronjob is running or not.
 
 ![Image](../cms/images/cronjob-verify.png)

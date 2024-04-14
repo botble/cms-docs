@@ -153,13 +153,9 @@ Assets::addScripts(['input-mask']);
 ### Date picker field
 
 ```php
-->add('field_name', 'text', [
+->add('field_name', 'datePicker', [
     'label' => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
-    'attr' => [
-        'class' => 'form-control datepicker',
-        'data-date-format' => 'yyyy/mm/dd',
-    ],
     'default_value' => now(config('app.timezone'))->format('Y/m/d'),
 ])
 ```

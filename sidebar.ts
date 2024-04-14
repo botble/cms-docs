@@ -88,6 +88,7 @@ export default [
       { text: 'Setup social login', link: '/cms/usage-social-login' },
       { text: 'Reset admin password', link: '/cms/usage-reset-admin-password' },
       { text: 'Setup cronjob', link: '/cms/cronjob' },
+      { text: 'Setup CDN', link: '/cms/usage-setup-cdn' },
     ],
   }
 ] satisfies DefaultTheme.SidebarItem[];
